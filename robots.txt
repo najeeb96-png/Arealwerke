@@ -1,6 +1,7 @@
-# robots.txt – AREALWERK PLUS Dienstleistungen
+# robots.txt – Arealwerk Plus UG (haftungsbeschränkt)
 # TODO: Bei eigener Domain die Sitemap-URL anpassen
+# TODO: Testphase – solange die Seite nicht öffentlich beworben wird, ist die Indexierung gesperrt. Zum Start: 'Disallow: /' entfernen.
 User-agent: *
-Allow: /
+Disallow: /
 
 Sitemap: https://najeeb96-png.github.io/Arealwerke/sitemap.xml

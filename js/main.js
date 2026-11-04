@@ -225,6 +225,31 @@
     });
   });
 
+  /* 7b. Preis-Umschalter Privat (inkl. MwSt.) / Gewerbe (zzgl. MwSt.) ----- */
+  // Preise stehen als data-brutto / data-netto an den Elementen; Standard ist Privat.
+  function setPriceMode(mode) {
+    document.querySelectorAll("[data-price], [data-price-note]").forEach(function (el) {
+      var v = el.getAttribute(mode === "gewerbe" ? "data-netto" : "data-brutto");
+      if (v === null) return;
+      var small = el.querySelector("small");
+      el.textContent = v + (small ? " " : "");
+      if (small) el.appendChild(small);
+    });
+    document.querySelectorAll(".price-toggle-btn").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-price-mode") === mode));
+    });
+  }
+  document.querySelectorAll(".price-toggle-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () { setPriceMode(btn.getAttribute("data-price-mode")); });
+  });
+
+  /* 7c. Danke-Seite: Hinweistext je nach Formular (?typ=rueckruf|besichtigung|vertrag) */
+  var typ = new URLSearchParams(window.location.search).get("typ");
+  if (typ) {
+    document.querySelectorAll("[data-typ='" + typ + "']").forEach(function (el) { el.hidden = false; });
+    if (typ === "rueckruf") document.querySelectorAll("[data-typ='default']").forEach(function (el) { el.hidden = true; });
+  }
+
   /* 8. Formulare --------------------------------------------------------- */
   // Versand über Web3Forms (https://web3forms.com). Solange der Zugangsschlüssel
   // noch ein Platzhalter ist (beginnt mit "TODO"), wird automatisch das

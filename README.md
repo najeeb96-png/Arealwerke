@@ -1,7 +1,9 @@
-# AREALWERK PLUS Dienstleistungen – Webseite
+# Arealwerk Plus UG (haftungsbeschränkt) – Webseite
 
 Statische Firmenwebseite (reines HTML, CSS, JavaScript – kein Framework, keine Build-Tools) für
-**AREALWERK PLUS Dienstleistungen** · *„Qualität, die überzeugt.“*
+**Arealwerk Plus UG (haftungsbeschränkt)**, Rodgau · Marke „AREALWERK PLUS Dienstleistungen“ · *„Qualität, die überzeugt.“*
+
+> **Testversion:** Alle Seiten tragen `noindex` und `robots.txt` sperrt Suchmaschinen. Zum Start beides entfernen (siehe TODO.md, Punkt 1).
 
 Live (GitHub Pages): **https://najeeb96-png.github.io/Arealwerke/**
 
@@ -9,7 +11,7 @@ Live (GitHub Pages): **https://najeeb96-png.github.io/Arealwerke/**
 
 ---
 
-## 1. GitHub Pages einschalten (einmalig)
+## 1. Veröffentlichung (GitHub Pages)
 
 1. Auf GitHub das Repository `arealwerke` öffnen → **Settings** → **Pages**.
 2. Unter **Build and deployment** → *Source*: **Deploy from a branch**.
@@ -55,9 +57,10 @@ FAQ: Startseite und `kontakt/index.html` (Abschnitt „Häufige Fragen“; im `<
 | E-Mail | `arealwerkplus@icloud.com` | alle Seiten + `data-mailto` der Formulare |
 | WhatsApp | `https://wa.me/4915114964367` | alle Seiten – **Nummer prüfen** (Format: 49 ohne 0 und ohne +) |
 | Instagram | `https://www.instagram.com/arealwerke_plus` | alle Seiten |
-| Adresse | `Musterstraße 1, 12345 Musterstadt` | Footer + JSON-LD (alle Seiten), Impressum, Datenschutz |
-| Erreichbarkeit | Mo–Fr 07–18 Uhr | Kontaktboxen (`<table class="hours">`) + JSON-LD |
-| Einzugsgebiet | Musterstadt, Musterdorf … | `<ul class="places">` in `index.html` und `ueber-uns/index.html` + JSON-LD `areaServed` |
+| Adresse | `[Straße Hausnummer]`, 63110 Rodgau | Footer + JSON-LD (alle Seiten), Impressum, Datenschutz, AGB |
+| Firmierung / „i. G.“ | `Arealwerk Plus UG (haftungsbeschränkt)` | überall; „i. G.“ einblenden: bei `<span data-ig hidden>` das `hidden` entfernen |
+| Erreichbarkeit | `[Zeiten folgen]` | Kontaktboxen (`<table class="hours">`) + JSON-LD |
+| Einzugsgebiet | Rodgau, Rödermark, Dietzenbach … | `<ul class="places">` in `index.html` und `ueber-uns/index.html` + JSON-LD `areaServed` |
 
 ### Logo
 - `images/logo.svg` – großes Logo mit Schriftzug (Startseite)
@@ -73,8 +76,9 @@ Alle Bilder sind farbige SVG-Platzhalter mit sprechenden Namen:
 - `images/bereiche/reinigung.svg`, `garten.svg`, `handwerk.svg` – Kacheln der Leistungsbereiche (16:9)
 - `images/referenzen/…` – Galerie (4:3), z. B. `reinigung-treppenhaus.svg`, `garten-heckenschnitt.svg`, `handwerk-armatur-montage.svg`
 - `images/referenzen/…-vorher.svg` / `…-nachher.svg` – Vorher/Nachher-Slider (gleicher Bildausschnitt verwenden!)
-- `images/team/teamfoto.svg`, `gruender.svg` – Team / Inhaber
-- `images/kunden/kundenlogo-1.svg` … `-5.svg` – Kundenlogos (nur mit Erlaubnis!)
+- `images/team/teamfoto.svg`, `geschaeftsfuehrer.svg` – Team / Geschäftsführer
+- `images/kunden/kunde-a.svg` … `kunde-e.svg` – Kundenlogos (nur mit Erlaubnis!)
+- `downloads/flyer.pdf` – Flyer (Platzhalter-PDF ersetzen)
 
 **So ersetzen Sie ein Bild:**
 1. Foto auf ca. 1600 px Breite verkleinern und als **WebP** (oder JPG) speichern, z. B. mit [squoosh.app](https://squoosh.app).
@@ -93,17 +97,18 @@ Wer zusätzlich einen JPG-Fallback möchte, kann `<picture>` nutzen:
 **Neues Galeriebild hinzufügen:** in `referenzen/index.html` einen `<li data-category="garten" …>`-Eintrag kopieren. `data-category` (`reinigung`, `garten`, `handwerk`) steuert den Filter.
 
 ### Preise, Pakete, Laufzeiten
-- Paketkarten (Basis / Komfort / Premium): `ab … €` in `index.html`, `servicepakete/index.html`, `gewerbe/index.html`
+- Richtpreise je Leistung: `ab TODO €/…` in `reinigung/`, `garten/`, `handwerk/` (`<p class="price-line">`)
+- Paketkarten (Basis / Komfort / Premium): jeweils zwei Werte – `data-brutto` (Privat, inkl. MwSt.) und `data-netto` (Gewerbe, zzgl. MwSt.) – in `index.html`, `servicepakete/index.html`, `gewerbe/index.html`. Der Umschalter auf der Seite wechselt automatisch.
 - Vergleichstabelle + Konditionen (Intervalle, Laufzeit, Kündigungsfrist): `servicepakete/index.html`
 - Vertragsregeln zusätzlich in `agb/index.html` § 6 angleichen.
 
 ### Kundenstimmen
-In `index.html` und `referenzen/index.html` (`<article class="card review">`). Nur echte Bewertungen mit Einverständnis verwenden und danach das gelbe „Platzhalter“-Etikett entfernen.
+„Rezension A–E“ in `index.html` und `referenzen/index.html` (`<article class="card review">`): Text, Name, Ort und Sterne (`★`) ersetzen. Nur echte Bewertungen mit Einverständnis verwenden.
 Google-Bewertungslink: `https://g.page/r/TODO-GOOGLE-BEWERTUNGSLINK/review` ersetzen (Google Unternehmensprofil → „Bewertungen erhalten“ → Link kopieren).
 
 ### Formular-Schlüssel (Web3Forms)
 1. Auf [web3forms.com](https://web3forms.com) mit `arealwerkplus@icloud.com` kostenlos einen *Access Key* anfordern.
-2. In allen Dateien `TODO_WEB3FORMS_ACCESS_KEY` durch den Schlüssel ersetzen (Formulare auf Startseite, `kontakt/` und `servicepakete/`).
+2. In allen Dateien `TODO_WEB3FORMS_ACCESS_KEY` durch den Schlüssel ersetzen (Anfrage-, Rückruf-, Besichtigungs- und Vertragsformular auf Startseite, `kontakt/` und `servicepakete/`).
 3. Bei eigener Domain: `<input type="hidden" name="redirect" …>` zeigt auf die Danke-Seite – wird per JavaScript automatisch richtig gesetzt, die Adresse im HTML ist nur für Besucher ohne JavaScript.
 
 Solange der Schlüssel fehlt, öffnet das Formular beim Absenden das **E-Mail-Programm** des Besuchers mit allen Angaben (mailto-Fallback).
@@ -114,7 +119,7 @@ Ganz oben in `css/style.css` unter „Design-Tokens“: `--c-gold`, `--c-blue` (
 Schriften: Inter (Text) und Playfair Display (Überschriften), lokal in `fonts/`.
 
 ### Karte
-Die OpenStreetMap-Karte wird erst nach Klick geladen (datenschutzfreundlich). Ausschnitt ändern: auf openstreetmap.org Ort suchen → *Teilen* → *HTML* → den `src`-Link in `data-map-src="…"` einsetzen (`index.html`, `kontakt/index.html`).
+Die OpenStreetMap-Karte (Zentrum Rodgau) wird erst nach Klick geladen (datenschutzfreundlich). Marker/Ausschnitt ändern: auf openstreetmap.org Ort suchen → *Teilen* → *HTML* → den `src`-Link in `data-map-src="…"` einsetzen (`index.html`, `kontakt/index.html`).
 
 ---
 
@@ -149,4 +154,4 @@ Lokal ansehen: Ordner öffnen und im Terminal `python3 -m http.server` starten, 
 
 ## 6. Rechtlicher Hinweis
 
-Impressum, Datenschutzerklärung und AGB sind **Entwürfe mit Platzhaltern** und auf der Seite deutlich so markiert. Vor dem offiziellen Start bitte rechtlich prüfen lassen und die Hinweisboxen „Entwurf“ entfernen. Für Sanitär-, Heizungs- und Elektroarbeiten außerdem klären, welche Tätigkeiten ohne Meistertitel bzw. Eintrag in die Handwerksrolle zulässig sind.
+Impressum, Datenschutzerklärung und AGB sind **Entwürfe mit Platzhaltern** und auf der Seite deutlich so markiert. Vor dem offiziellen Start bitte rechtlich prüfen lassen und die Hinweisboxen „Entwurf“ entfernen. Der Handwerkerservice ist bewusst auf Kleinreparaturen, Montage, Instandhaltung und Wartung beschränkt; zulassungspflichtige Arbeiten werden an Partnerbetriebe vermittelt – die Abgrenzung bitte mit der Handwerkskammer Frankfurt-Rhein-Main klären.
