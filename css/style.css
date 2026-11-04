@@ -868,7 +868,7 @@ a.contact-line:hover { border-color: var(--c-gold); color: var(--c-text); transf
 
 /* Karte mit Klick-zum-Laden (lädt erst nach Zustimmung) */
 .map-consent {
-  position: relative; aspect-ratio: 16 / 10; min-height: 300px;
+  position: relative; width: 100%; min-height: 320px;
   border-radius: var(--radius); overflow: hidden;
   border: 1px solid var(--c-line);
   background:
