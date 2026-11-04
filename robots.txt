@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://najeeb96-png.github.io/arealwerke/sitemap.xml
+Sitemap: https://najeeb96-png.github.io/Arealwerke/sitemap.xml

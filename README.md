@@ -3,7 +3,7 @@
 Statische Firmenwebseite (reines HTML, CSS, JavaScript – kein Framework, keine Build-Tools) für
 **AREALWERK PLUS Dienstleistungen** · *„Qualität, die überzeugt.“*
 
-Live (GitHub Pages): **https://najeeb96-png.github.io/arealwerke/**
+Live (GitHub Pages): **https://najeeb96-png.github.io/Arealwerke/**
 
 > Alle offenen Platzhalter stehen in **[TODO.md](TODO.md)** (mit Datei und Zeile). Im Code sind sie einheitlich mit `TODO` markiert.
 
@@ -14,7 +14,7 @@ Live (GitHub Pages): **https://najeeb96-png.github.io/arealwerke/**
 1. Auf GitHub das Repository `arealwerke` öffnen → **Settings** → **Pages**.
 2. Unter **Build and deployment** → *Source*: **Deploy from a branch**.
 3. *Branch*: **main**, Ordner: **/ (root)** → **Save**.
-4. Nach 1–2 Minuten ist die Seite unter `https://najeeb96-png.github.io/arealwerke/` erreichbar.
+4. Nach 1–2 Minuten ist die Seite unter `https://najeeb96-png.github.io/Arealwerke/` erreichbar.
 
 Jede Änderung, die auf `main` landet, wird automatisch veröffentlicht. Die Datei `.nojekyll` sorgt dafür, dass GitHub die Dateien unverändert ausliefert.
 
@@ -127,8 +127,8 @@ Die OpenStreetMap-Karte wird erst nach Klick geladen (datenschutzfreundlich). Au
    - für die Domain ohne www (`@`) vier **A-Records**: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
 4. Warten (bis zu 24 h), dann bei GitHub **Enforce HTTPS** aktivieren.
 5. **Adressen in der Webseite anpassen** – per Suchen & Ersetzen in allen Dateien:
-   - `https://najeeb96-png.github.io/arealwerke/` → `https://www.arealwerkplus.de/` (Canonical, Open Graph, JSON-LD, `sitemap.xml`, `robots.txt`, Formular-`redirect`)
-   - in `404.html`: `<base href="/arealwerke/">` → `<base href="/">`
+   - `https://najeeb96-png.github.io/Arealwerke/` → `https://www.arealwerkplus.de/` (Canonical, Open Graph, JSON-LD, `sitemap.xml`, `robots.txt`, Formular-`redirect`)
+   - in `404.html`: `<base href="/Arealwerke/">` → `<base href="/">`
 6. Optional: Seite in der [Google Search Console](https://search.google.com/search-console) anmelden und `sitemap.xml` einreichen; Google Unternehmensprofil anlegen.
 
 Hinweis: `robots.txt` wirkt nur im Hauptverzeichnis einer Domain – also erst mit eigener Domain.
