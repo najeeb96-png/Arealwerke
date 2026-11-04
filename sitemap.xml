@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO: Bei eigener Domain alle URLs anpassen -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://najeeb96-png.github.io/arealwerke/</loc><lastmod>2026-11-04</lastmod><priority>1.0</priority></url>
+  <url><loc>https://najeeb96-png.github.io/arealwerke/reinigung/</loc><lastmod>2026-11-04</lastmod><priority>0.9</priority></url>
+  <url><loc>https://najeeb96-png.github.io/arealwerke/garten/</loc><lastmod>2026-11-04</lastmod><priority>0.9</priority></url>
+  <url><loc>https://najeeb96-png.github.io/arealwerke/handwerk/</loc><lastmod>2026-11-04</lastmod><priority>0.9</priority></url>
+  <url><loc>https://najeeb96-png.github.io/arealwerke/servicepakete/</loc><lastmod>2026-11-04</lastmod><priority>0.9</priority></url>
+  <url><loc>https://najeeb96-png.github.io/arealwerke/gewerbe/</loc><lastmod>2026-11-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://najeeb96-png.github.io/arealwerke/referenzen/</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://najeeb96-png.github.io/arealwerke/ueber-uns/</loc><lastmod>2026-11-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://najeeb96-png.github.io/arealwerke/kontakt/</loc><lastmod>2026-11-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://najeeb96-png.github.io/arealwerke/impressum/</loc><lastmod>2026-11-04</lastmod><priority>0.2</priority></url>
+  <url><loc>https://najeeb96-png.github.io/arealwerke/datenschutz/</loc><lastmod>2026-11-04</lastmod><priority>0.2</priority></url>
+  <url><loc>https://najeeb96-png.github.io/arealwerke/agb/</loc><lastmod>2026-11-04</lastmod><priority>0.2</priority></url>
+  <url><loc>https://najeeb96-png.github.io/arealwerke/sitemap/</loc><lastmod>2026-11-04</lastmod><priority>0.1</priority></url>
+</urlset>

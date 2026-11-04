@@ -1,0 +1,6 @@
+# robots.txt – AREALWERK PLUS Dienstleistungen
+# TODO: Bei eigener Domain die Sitemap-URL anpassen
+User-agent: *
+Allow: /
+
+Sitemap: https://najeeb96-png.github.io/arealwerke/sitemap.xml

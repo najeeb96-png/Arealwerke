@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 330" role="img" aria-labelledby="t">
+  <!-- TODO: Platzhalter-Logo (AR-Monogramm + Schriftzug). Durch das Original-Logo ersetzen (gleicher Dateiname). -->
+  <title id="t">AREALWERK PLUS Dienstleistungen</title>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f1d991"/>
+      <stop offset="0.45" stop-color="#c9a24a"/>
+      <stop offset="1" stop-color="#8f6d24"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(130 10) scale(1.33)">
+    <rect x="3" y="3" width="114" height="114" rx="14" fill="#0e1012" stroke="url(#gold)" stroke-width="2"/>
+    <g fill="none" stroke="url(#gold)" stroke-linecap="square" stroke-linejoin="miter">
+    <!-- A -->
+    <path d="M18 96 L44 22 L70 96" stroke-width="9"/>
+    <path d="M29 70 H59" stroke-width="6"/>
+    <!-- R (teilt sich die Mitte mit dem A) -->
+    <path d="M62 96 V24 H82 a18 18 0 0 1 0 36 H62" stroke-width="8"/>
+    <path d="M80 60 L102 96" stroke-width="8"/>
+  </g>
+  </g>
+  <text x="210" y="226" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="33" font-weight="700" letter-spacing="3" fill="url(#gold)">AREALWERK PLUS</text>
+  <line x1="60" y1="250" x2="360" y2="250" stroke="url(#gold)" stroke-width="1.2"/>
+  <text x="210" y="282" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="8" fill="#d9d4c7">DIENSTLEISTUNGEN</text>
+  <text x="210" y="316" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="17" fill="#c9a24a">Qualität, die überzeugt.</text>
+</svg>

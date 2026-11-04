@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" width="900" height="1100">
+  <!-- TODO: Platzhalter-Grafik – durch echtes Foto ersetzen (z. B. gleicher Name als .webp oder .jpg, dann Endung im HTML anpassen). -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#15181c"/>
+      <stop offset="1" stop-color="#2a3038"/>
+    </linearGradient>
+    <pattern id="p" width="48" height="48" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="48" height="48" fill="none"/>
+      <line x1="0" y1="0" x2="0" y2="48" stroke="#ffffff" stroke-opacity="0.04" stroke-width="20"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <rect width="900" height="1100" fill="url(#p)"/>
+  <g transform="translate(351.0 401.5) scale(8.25)" fill="none" stroke="#a9adb3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/>
+  </g>
+  <text x="450.0" y="678.7" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#ffffff" fill-opacity="0.92">Foto Inhaber</text>
+  <rect x="240.0" y="704.7" width="420" height="54" rx="27" fill="#000" fill-opacity="0.35"/>
+  <text x="450.0" y="739.7" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="3" fill="#a9adb3">PLATZHALTER</text>
+</svg>

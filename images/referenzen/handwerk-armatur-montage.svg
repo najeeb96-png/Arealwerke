@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <!-- TODO: Platzhalter-Grafik – durch echtes Foto ersetzen (z. B. gleicher Name als .webp oder .jpg, dann Endung im HTML anpassen). -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#241c0a"/>
+      <stop offset="1" stop-color="#9c7a2c"/>
+    </linearGradient>
+    <pattern id="p" width="48" height="48" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="48" height="48" fill="none"/>
+      <line x1="0" y1="0" x2="0" y2="48" stroke="#ffffff" stroke-opacity="0.04" stroke-width="20"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect width="1200" height="900" fill="url(#p)"/>
+  <g transform="translate(501.0 301.5) scale(8.25)" fill="none" stroke="#e3c47c" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.8-3.8a6 6 0 01-7.9 7.9l-6.9 6.9a2.1 2.1 0 01-3-3l6.9-6.9a6 6 0 017.9-7.9z"/>
+  </g>
+  <text x="600.0" y="578.7" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700" fill="#ffffff" fill-opacity="0.92">Armatur-Montage</text>
+  <rect x="390.0" y="604.7" width="420" height="54" rx="27" fill="#000" fill-opacity="0.35"/>
+  <text x="600.0" y="639.7" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="3" fill="#e3c47c">PLATZHALTER</text>
+</svg>
