@@ -27,28 +27,14 @@ Nach jeder Änderung an `js/config.js` einmal `python3 tools/apply-config.py` au
 ## 0. Konfiguration (js/config.js)
 
 ### `js/config.js`
-- [ ] Zeile 11: "TODO"
-- [ ] Zeile 26: "TODO [Vorname Nachname]"
-- [ ] Zeile 28: "TODO"
-- [ ] Zeile 29: "TODO"
-- [ ] Zeile 31: "TODO [Straße Hausnummer]"
+- [ ] Zeile 26: Wert "TODO [Vorname Nachname]"
+- [ ] Zeile 28: Wert "TODO"
+- [ ] Zeile 29: Wert "TODO"
+- [ ] Zeile 31: Wert "TODO [Straße Hausnummer]"
 - [ ] Zeile 43: TODO: prüfen, ob die Mobilnummer für WhatsApp genutzt wird.",
-- [ ] Zeile 48: "TODO [Zeiten folgen]"
-- [ ] Zeile 49: "TODO [Zeiten folgen]"
-- [ ] Zeile 50: "TODO [Zeiten folgen]"
-- [ ] Zeile 53: "TODO_WEB3FORMS_ACCESS_KEY"
-- [ ] Zeile 55: "TODO"
-- [ ] Zeile 56: "TODO"
-
-### `js/main.js`
-- [ ] Zeile 22: "TODO"
-- [ ] Zeile 334: "TODO…"
-
-### `tools/apply-config.py`
-- [ ] Zeile 20: "TODO"
-- [ ] Zeile 43: "TODO"
-- [ ] Zeile 58: "TODO "
-- [ ] Zeile 60: "TODO "
+- [ ] Zeile 53: Wert "TODO_WEB3FORMS_ACCESS_KEY"
+- [ ] Zeile 55: Wert "TODO"
+- [ ] Zeile 56: Wert "TODO"
 
 ## 2. Seiten, Kontakt & Technik
 
@@ -59,7 +45,7 @@ Nach jeder Änderung an `js/config.js` einmal `python3 tools/apply-config.py` au
 - [ ] Zeile 2: TODO: Vorläufiges Logo (AR-Monogramm). Durch das Original-Logo ersetzen (gleicher Dateiname).
 
 ### `garten/index.html`
-- [ ] Zeile 50: "TODO"
+- [ ] Zeile 50: Wert "TODO"
 - [ ] Zeile 306: TODO: Richtpreis eintragen
 - [ ] Zeile 306: TODO €
 - [ ] Zeile 306: TODO: Richtpreis eintragen
@@ -78,7 +64,7 @@ Nach jeder Änderung an `js/config.js` einmal `python3 tools/apply-config.py` au
 - [ ] Zeile 346: TODO: Beispielbilder durch echte Projektfotos ersetzen
 
 ### `gewerbe/index.html`
-- [ ] Zeile 50: "TODO"
+- [ ] Zeile 50: Wert "TODO"
 - [ ] Zeile 311: TODO: Winterdienst-Kapazität bestätigen
 - [ ] Zeile 313: TODO: Prüfen, ob Kleinunternehmerregelung gilt
 - [ ] Zeile 337: TODO: Preise für Paket Basis eintragen: data-brutto (Privat, inkl. MwSt.) und data-netto (Gewerbe, zzgl. MwSt.)
@@ -99,7 +85,7 @@ Nach jeder Änderung an `js/config.js` einmal `python3 tools/apply-config.py` au
 - [ ] Zeile 370: TODO Std.
 
 ### `handwerk/index.html`
-- [ ] Zeile 50: "TODO"
+- [ ] Zeile 50: Wert "TODO"
 - [ ] Zeile 306: TODO: Richtpreis eintragen
 - [ ] Zeile 306: TODO €
 - [ ] Zeile 306: TODO: Richtpreis eintragen
@@ -120,7 +106,7 @@ Nach jeder Änderung an `js/config.js` einmal `python3 tools/apply-config.py` au
 
 ### `index.html`
 - [ ] Zeile 28: TODO Monaten
-- [ ] Zeile 52: "TODO"
+- [ ] Zeile 52: Wert "TODO"
 - [ ] Zeile 408: TODO: Preise für Paket Basis eintragen: data-brutto (Privat, inkl. MwSt.) und data-netto (Gewerbe, zzgl. MwSt.)
 - [ ] Zeile 409: TODO €
 - [ ] Zeile 409: TODO €
@@ -150,16 +136,16 @@ Nach jeder Änderung an `js/config.js` einmal `python3 tools/apply-config.py` au
 - [ ] Zeile 572: TODO: Versicherung bestätigen (Versicherer, Deckungssumme) – Antwort erst nach Vorliegen der Police veröffentlichen
 - [ ] Zeile 572: TODO: SEPA-Lastschrift und Zahlungsziel bestätigen
 - [ ] Zeile 572: TODO: Notdienst-Regelung festlegen
-- [ ] Zeile 612: "TODO_WEB3FORMS_ACCESS_KEY"
-- [ ] Zeile 655: "TODO_WEB3FORMS_ACCESS_KEY"
+- [ ] Zeile 612: TODO_WEB3FORMS_ACCESS_KEY
+- [ ] Zeile 655: TODO_WEB3FORMS_ACCESS_KEY
 - [ ] Zeile 699: TODO: Datei-Upload benötigt bei Web3Forms ggf. einen kostenpflichtigen Tarif – prüfen oder Feld entfernen
 - [ ] Zeile 754: TODO: Marker auf die genaue Firmenadresse setzen (data-map-src, Parameter marker=lat,lon)
 
 ### `kontakt/index.html`
 - [ ] Zeile 28: TODO Monaten
-- [ ] Zeile 52: "TODO"
-- [ ] Zeile 332: "TODO_WEB3FORMS_ACCESS_KEY"
-- [ ] Zeile 375: "TODO_WEB3FORMS_ACCESS_KEY"
+- [ ] Zeile 52: Wert "TODO"
+- [ ] Zeile 332: TODO_WEB3FORMS_ACCESS_KEY
+- [ ] Zeile 375: TODO_WEB3FORMS_ACCESS_KEY
 - [ ] Zeile 419: TODO: Datei-Upload benötigt bei Web3Forms ggf. einen kostenpflichtigen Tarif – prüfen oder Feld entfernen
 - [ ] Zeile 475: TODO: Marker auf die genaue Firmenadresse setzen (data-map-src, Parameter marker=lat,lon)
 - [ ] Zeile 488: TODO: Anfahrtsregelung bestätigen
@@ -170,14 +156,14 @@ Nach jeder Änderung an `js/config.js` einmal `python3 tools/apply-config.py` au
 - [ ] Zeile 488: TODO: Notdienst-Regelung festlegen
 
 ### `referenzen/index.html`
-- [ ] Zeile 50: "TODO"
+- [ ] Zeile 50: Wert "TODO"
 - [ ] Zeile 304: TODO: Beispielbilder durch echte Projektfotos ersetzen
 - [ ] Zeile 315: TODO: Vorher/Nachher-Beispielbilder durch echte Fotos ersetzen
 - [ ] Zeile 366: TODO: Rezension A–E durch echte Kundenstimmen ersetzen (Name, Ort, Sterne, Text) – nur mit Einverständnis
 - [ ] Zeile 393: TODO: Kunde A–E durch echte Kundenlogos ersetzen (images/kunden/) – nur mit schriftlicher Erlaubnis
 
 ### `reinigung/index.html`
-- [ ] Zeile 50: "TODO"
+- [ ] Zeile 50: Wert "TODO"
 - [ ] Zeile 306: TODO: Richtpreis eintragen
 - [ ] Zeile 306: TODO €
 - [ ] Zeile 306: TODO: Richtpreis eintragen
@@ -194,7 +180,7 @@ Nach jeder Änderung an `js/config.js` einmal `python3 tools/apply-config.py` au
 - [ ] Zeile 346: TODO: Beispielbilder durch echte Projektfotos ersetzen
 
 ### `servicepakete/index.html`
-- [ ] Zeile 50: "TODO"
+- [ ] Zeile 50: Wert "TODO"
 - [ ] Zeile 330: TODO: Vertragskonditionen (Intervalle, Laufzeiten, Kündigungsfristen) festlegen und eintragen
 - [ ] Zeile 334: TODO Monaten
 - [ ] Zeile 336: TODO: Kündigungsfrist festlegen; Verlängerungsregel rechtlich prüfen lassen
@@ -229,13 +215,10 @@ Nach jeder Änderung an `js/config.js` einmal `python3 tools/apply-config.py` au
 - [ ] Zeile 407: TODO: Prüfen, ob Kleinunternehmerregelung gilt
 - [ ] Zeile 431: TODO: Prüfen, ob Kleinunternehmerregelung gilt
 - [ ] Zeile 455: TODO: Betriebshaftpflicht bestätigen (Versicherer, Deckungssumme) – bis dahin Formulierung prüfen
-- [ ] Zeile 471: "TODO_WEB3FORMS_ACCESS_KEY"
-
-### `sitemap.xml`
-- [ ] Zeile 2: TODO: Bei eigener Domain alle URLs anpassen
+- [ ] Zeile 471: TODO_WEB3FORMS_ACCESS_KEY
 
 ### `ueber-uns/index.html`
-- [ ] Zeile 50: "TODO"
+- [ ] Zeile 50: Wert "TODO"
 - [ ] Zeile 303: TODO: Gründungsgeschichte – eigene Worte, Gründungsjahr, Motivation, Erfahrung des Geschäftsführers
 - [ ] Zeile 310: TODO: Foto des Geschäftsführers einsetzen (images/team/geschaeftsfuehrer.svg ersetzen)
 - [ ] Zeile 317: TODO: 2–3 persönliche Sätze (Erfahrung, Motivation, was Kunden erwarten dürfen)
