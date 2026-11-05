@@ -3,7 +3,32 @@
 Statische Firmenwebseite (reines HTML, CSS, JavaScript – kein Framework, keine Build-Tools) für
 **Arealwerk Plus UG (haftungsbeschränkt)**, Rodgau · Marke „AREALWERK PLUS Dienstleistungen“ · *„Qualität, die überzeugt.“*
 
-> **Testversion:** Alle Seiten tragen `noindex` und `robots.txt` sperrt Suchmaschinen. Zum Start beides entfernen (siehe TODO.md, Punkt 1).
+> **Testversion:** Alle Seiten tragen `noindex` und `robots.txt` sperrt Suchmaschinen. Zum Start in `js/config.js` `"indexierung": true` setzen und `python3 tools/apply-config.py` ausführen.
+
+## 0. Zentrale Konfiguration – `js/config.js`
+
+Alle Firmendaten stehen an **einer** Stelle: `js/config.js`. Jede Seite liest die Datei beim Laden und trägt die Werte ein.
+
+| Schlüssel | Bedeutung |
+|---|---|
+| `firma`, `marke`, `slogan` | Volle Firmierung (Footer, Impressum, Schema.org), Marke (Hero/Logo), Claim |
+| `inGruendung` | `true` = Zusatz „i. G.“ überall, Impressum zeigt „Eintragung beantragt“ + Haftungshinweis. Nach HR-Eintragung `false` |
+| `geschaeftsfuehrer`, `registergericht`, `hrb`, `ustId` | Impressum / AGB / Datenschutz |
+| `strasse`, `plz`, `ort`, `bundesland`, `region`, `einzugsgebiet` | Adresse, Region in Texten, Ortsliste |
+| `telefonAnzeige`, `telefonLink`, `email`, `whatsappNummer`, `instagram` | Alle Kontaktlinks und -buttons |
+| `oeffnungszeiten` | Tabelle „Erreichbarkeit“ |
+| `web3formsKey` | Formular-Schlüssel; solange `TODO…`, öffnet sich beim Absenden das E-Mail-Programm |
+| `googleBewertungLink`, `calendlyLink`, `flyerPfad` | Buttons/Links erscheinen **erst**, wenn ein echter Wert eingetragen ist |
+| `indexierung` | `false` = Testphase (noindex, nofollow); `true` = Suchmaschinen erlaubt |
+| `baseUrl` | Adresse der Webseite (für Canonical, Open Graph, Sitemap) |
+
+**Wichtig:** Suchmaschinen lesen einige Dinge ohne JavaScript (meta robots, robots.txt, sitemap.xml, Schema.org). Deshalb nach einer Änderung an `js/config.js` einmal im Hauptordner ausführen:
+
+```
+python3 tools/apply-config.py
+```
+
+Das Skript überträgt die Konfiguration in diese statischen Dateien (nur Python 3 nötig, keine Pakete). Wer es nicht ausführen kann: Die Seite funktioniert trotzdem – nur die Umschaltung von noindex auf index muss dann per Suchen & Ersetzen in allen HTML-Dateien und in `robots.txt` erfolgen.
 
 Live (GitHub Pages): **https://najeeb96-png.github.io/Arealwerke/**
 
@@ -32,7 +57,9 @@ referenzen/  ueber-uns/  kontakt/         Galerie, Firma, Kontakt
 impressum/  datenschutz/  agb/            Rechtstexte (ENTWURF – rechtlich prüfen lassen!)
 danke/  sitemap/  404.html                Danke-Seite nach Formularversand, HTML-Sitemap, Fehlerseite
 css/style.css           Gesamtes Design – alle Farben als CSS-Variablen ganz oben
-js/main.js              Menü, Galerie/Lightbox, Vorher/Nachher, Karte, Formulare
+js/config.js            ZENTRALE KONFIGURATION – Firmendaten, Schalter, Schlüssel (siehe Abschnitt 0)
+js/main.js              Menü, Kontakt-Auswahl, Galerie/Lightbox, Vorher/Nachher, Karte, Formulare
+tools/apply-config.py   überträgt js/config.js in robots.txt, sitemap.xml, meta robots, Schema.org
 fonts/                  Schriften (lokal, keine Verbindung zu Google)
 images/                 Logo, Platzhalter-Bilder
 favicon.svg, favicon-32.png, favicon.ico, apple-touch-icon.png
@@ -50,17 +77,8 @@ Kopf (Navigation) und Fußzeile stehen in jeder Datei. **Änderungen daran (z. B
 Direkt in der jeweiligen `index.html` bearbeiten. Die Abschnitte sind über Überschriften leicht zu finden.
 FAQ: Startseite und `kontakt/index.html` (Abschnitt „Häufige Fragen“; im `<head>` steht dieselbe FAQ als JSON-LD für Google – bei Änderungen bitte mitpflegen).
 
-### Kontaktdaten
-| Was | Aktuell | Wo |
-|---|---|---|
-| Telefon | `0151 14964367` / `tel:+4915114964367` | alle Seiten (Suchen & Ersetzen) |
-| E-Mail | `arealwerkplus@icloud.com` | alle Seiten + `data-mailto` der Formulare |
-| WhatsApp | `https://wa.me/4915114964367` | alle Seiten – **Nummer prüfen** (Format: 49 ohne 0 und ohne +) |
-| Instagram | `https://www.instagram.com/arealwerke_plus` | alle Seiten |
-| Adresse | `[Straße Hausnummer]`, 63110 Rodgau | Footer + JSON-LD (alle Seiten), Impressum, Datenschutz, AGB |
-| Firmierung / „i. G.“ | `Arealwerk Plus UG (haftungsbeschränkt)` | überall; „i. G.“ einblenden: bei `<span data-ig hidden>` das `hidden` entfernen |
-| Erreichbarkeit | `[Zeiten folgen]` | Kontaktboxen (`<table class="hours">`) + JSON-LD |
-| Einzugsgebiet | Rodgau, Rödermark, Dietzenbach … | `<ul class="places">` in `index.html` und `ueber-uns/index.html` + JSON-LD `areaServed` |
+### Kontaktdaten, Firmierung, Adresse, Erreichbarkeit, Einzugsgebiet
+Alles in `js/config.js` (siehe Abschnitt 0). Nichts davon muss noch in den HTML-Dateien gesucht werden.
 
 ### Logo
 - `images/logo.svg` – großes Logo mit Schriftzug (Startseite)
@@ -78,7 +96,7 @@ Alle Bilder sind farbige SVG-Platzhalter mit sprechenden Namen:
 - `images/referenzen/…-vorher.svg` / `…-nachher.svg` – Vorher/Nachher-Slider (gleicher Bildausschnitt verwenden!)
 - `images/team/teamfoto.svg`, `geschaeftsfuehrer.svg` – Team / Geschäftsführer
 - `images/kunden/kunde-a.svg` … `kunde-e.svg` – Kundenlogos (nur mit Erlaubnis!)
-- `downloads/flyer.pdf` – Flyer (Platzhalter-PDF ersetzen)
+- Flyer: PDF z. B. als `downloads/flyer.pdf` hochladen und in `js/config.js` bei `flyerPfad` eintragen – vorher sind alle Flyer-Buttons ausgeblendet
 
 **So ersetzen Sie ein Bild:**
 1. Foto auf ca. 1600 px Breite verkleinern und als **WebP** (oder JPG) speichern, z. B. mit [squoosh.app](https://squoosh.app).
@@ -102,14 +120,17 @@ Wer zusätzlich einen JPG-Fallback möchte, kann `<picture>` nutzen:
 - Vergleichstabelle + Konditionen (Intervalle, Laufzeit, Kündigungsfrist): `servicepakete/index.html`
 - Vertragsregeln zusätzlich in `agb/index.html` § 6 angleichen.
 
+### Kontakt-Auswahl
+Auf Startseite und Kontaktseite wählen Besucher zwischen „Sofort anrufen/WhatsApp“, „Rückruf“ und „Anfrage mit Details“ (nur eine Karte gleichzeitig offen). Links wie `kontakt/?bereich=garten#anfrage` öffnen direkt die Detail-Anfrage mit vorgewähltem Bereich; `kontakt/?besichtigung=1#anfrage` öffnet zusätzlich den Bereich „Besichtigungstermin wünschen“.
+
 ### Kundenstimmen
 „Rezension A–E“ in `index.html` und `referenzen/index.html` (`<article class="card review">`): Text, Name, Ort und Sterne (`★`) ersetzen. Nur echte Bewertungen mit Einverständnis verwenden.
-Google-Bewertungslink: `https://g.page/r/TODO-GOOGLE-BEWERTUNGSLINK/review` ersetzen (Google Unternehmensprofil → „Bewertungen erhalten“ → Link kopieren).
+Google-Bewertungslink: in `js/config.js` bei `googleBewertungLink` eintragen (Google Unternehmensprofil → „Bewertungen erhalten“ → Link kopieren). Der Button erscheint erst dann.
 
 ### Formular-Schlüssel (Web3Forms)
 1. Auf [web3forms.com](https://web3forms.com) mit `arealwerkplus@icloud.com` kostenlos einen *Access Key* anfordern.
-2. In allen Dateien `TODO_WEB3FORMS_ACCESS_KEY` durch den Schlüssel ersetzen (Anfrage-, Rückruf-, Besichtigungs- und Vertragsformular auf Startseite, `kontakt/` und `servicepakete/`).
-3. Bei eigener Domain: `<input type="hidden" name="redirect" …>` zeigt auf die Danke-Seite – wird per JavaScript automatisch richtig gesetzt, die Adresse im HTML ist nur für Besucher ohne JavaScript.
+2. In `js/config.js` bei `web3formsKey` eintragen – gilt für alle Formulare (Anfrage, Rückruf, Besichtigung, Vertragsanfrage).
+3. Jedes Formular hat ein unsichtbares Honeypot-Feld gegen Spam und leitet nach dem Absenden auf die Danke-Seite mit „Was passiert jetzt“.
 
 Solange der Schlüssel fehlt, öffnet das Formular beim Absenden das **E-Mail-Programm** des Besuchers mit allen Angaben (mailto-Fallback).
 Hinweis: Datei-Uploads (Fotos) sind bei Web3Forms je nach Tarif kostenpflichtig – ggf. das Foto-Feld in `contact_form` entfernen.
@@ -131,8 +152,9 @@ Die OpenStreetMap-Karte (Zentrum Rodgau) wird erst nach Klick geladen (datenschu
    - `www` → **CNAME** → `najeeb96-png.github.io`
    - für die Domain ohne www (`@`) vier **A-Records**: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
 4. Warten (bis zu 24 h), dann bei GitHub **Enforce HTTPS** aktivieren.
-5. **Adressen in der Webseite anpassen** – per Suchen & Ersetzen in allen Dateien:
-   - `https://najeeb96-png.github.io/Arealwerke/` → `https://www.arealwerkplus.de/` (Canonical, Open Graph, JSON-LD, `sitemap.xml`, `robots.txt`, Formular-`redirect`)
+5. **Adressen in der Webseite anpassen:**
+   - in `js/config.js` `baseUrl` auf `https://www.arealwerkplus.de/` setzen und `python3 tools/apply-config.py` ausführen (robots.txt, sitemap.xml, Schema.org)
+   - per Suchen & Ersetzen in allen HTML-Dateien: `https://najeeb96-png.github.io/Arealwerke/` → `https://www.arealwerkplus.de/` (Canonical, Open Graph, Formular-`redirect`)
    - in `404.html`: `<base href="/Arealwerke/">` → `<base href="/">`
 6. Optional: Seite in der [Google Search Console](https://search.google.com/search-console) anmelden und `sitemap.xml` einreichen; Google Unternehmensprofil anlegen.
 

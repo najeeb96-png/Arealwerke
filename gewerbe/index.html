@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gewerbe & Hausverwaltungen – Objektbetreuung in Rodgau & Rhein-Main | Arealwerk Plus UG (haftungsbeschränkt)</title>
 <meta name="description" content="Objektbetreuung für Hausverwaltungen, Vermieter, Büros und Praxen in Rodgau, Kreis Offenbach und Rhein-Main-Gebiet: Treppenhaus & Außenanlagen im Abo, Leistungsnachweise, Rechnung mit ausgewiesener MwSt.">
-<!-- TODO: Testphase – zum Start noindex entfernen (TEST_MODE) -->
-<meta name="robots" content="noindex, nofollow">
-<!-- TODO: Bei eigener Domain BASE-URL in allen canonical/og-Tags ersetzen (siehe README) -->
+<meta name="robots" content="noindex, nofollow" data-cfg-robots="index, follow">
 <link rel="canonical" href="https://najeeb96-png.github.io/Arealwerke/gewerbe/">
 <meta name="theme-color" content="#0e1012">
 <meta property="og:type" content="website">
@@ -25,9 +23,9 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/style.css?v=1793836725">
 
-<script type="application/ld+json">
+<script type="application/ld+json" data-ld="firma">
 {
   "@context": "https://schema.org",
   "@type": [
@@ -35,7 +33,7 @@
     "HomeAndConstructionBusiness"
   ],
   "@id": "https://najeeb96-png.github.io/Arealwerke/#firma",
-  "name": "Arealwerk Plus UG (haftungsbeschränkt)",
+  "name": "Arealwerk Plus UG (haftungsbeschränkt) i. G.",
   "alternateName": "AREALWERK PLUS Dienstleistungen",
   "legalName": "Arealwerk Plus UG (haftungsbeschränkt)",
   "slogan": "Qualität, die überzeugt.",
@@ -208,6 +206,13 @@
               "@type": "Service",
               "name": "Laubentfernung"
             }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Winterdienst"
+            }
           }
         ]
       },
@@ -271,13 +276,9 @@
       <img src="../images/logo-mark.svg" alt="" width="44" height="44">
       <span class="brand-text"><span class="brand-name">AREALWERK PLUS</span><span class="brand-sub">Dienstleistungen</span></span>
     </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen">
-      <span class="nav-toggle-bars"></span>
-    </button>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen"><span class="nav-toggle-bars"></span></button>
     <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
-      <ul class="nav-list">
-        <li><a href="../">Start</a></li><li><button class="nav-sub-toggle" type="button" aria-expanded="false" aria-controls="nav-sub-leistungen">Leistungen <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button><ul class="nav-sub" id="nav-sub-leistungen"><li><a href="../reinigung/"><span class="dot" style="background:var(--c-blue)"></span>Reinigung</a></li><li><a href="../garten/"><span class="dot" style="background:var(--c-green)"></span>Garten & Grünflächen</a></li><li><a href="../handwerk/"><span class="dot" style="background:var(--c-gold)"></span>Handwerkerservice</a></li></ul></li><li><a href="../servicepakete/">Servicepakete</a></li><li><a href="../gewerbe/" aria-current="page">Gewerbe</a></li><li><a href="../referenzen/">Referenzen</a></li><li><a href="../ueber-uns/">Über uns</a></li><li><a href="../kontakt/">Kontakt</a></li>
-      </ul>
+      <ul class="nav-list"><li><a href="../">Start</a></li><li><button class="nav-sub-toggle" type="button" aria-expanded="false" aria-controls="nav-sub-leistungen">Leistungen <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button><ul class="nav-sub" id="nav-sub-leistungen"><li><a href="../reinigung/"><span class="dot" style="background:var(--c-blue)"></span>Reinigung</a></li><li><a href="../garten/"><span class="dot" style="background:var(--c-green)"></span>Garten & Grünflächen</a></li><li><a href="../handwerk/"><span class="dot" style="background:var(--c-gold)"></span>Handwerkerservice</a></li></ul></li><li><a href="../servicepakete/">Servicepakete</a></li><li><a href="../gewerbe/" aria-current="page">Gewerbe</a></li><li><a href="../referenzen/">Referenzen</a></li><li><a href="../ueber-uns/">Über uns</a></li><li><a href="../kontakt/">Kontakt</a></li></ul>
       <div class="nav-cta"><a class="btn btn--gold btn--small" href="../kontakt/#anfrage">Anfrage</a></div>
     </nav>
   </div>
@@ -304,51 +305,43 @@
 <section class="section section--alt" aria-labelledby="lv-title">
   <div class="container">
     <div class="section-head"><span class="eyebrow">Leistungen für Geschäftskunden</span><h2 id="lv-title">Was Sie von uns erwarten können</h2></div>
-    <div class="grid grid-2">
+    <div class="grid grid-3">
       <article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2L2 7l10 5 10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span><h3>Objektbetreuung</h3><p class="muted">Ein Partner für alles rund um Ihr Objekt: Reinigung, Grünflächen, Kontrollgänge und Kleinreparaturen. Sie sparen Koordinationsaufwand und mehrere Dienstleister.</p></article>
       <article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg></span><h3>Treppenhaus &amp; Außenanlagen im Abo</h3><p class="muted">Feste Turnusse und feste Monatspreise. Wir kümmern uns um Treppenhaus, Eingänge, Müllplätze, Wege, Rasen und Hecken – das ganze Jahr.</p></article>
+      <article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9L4.9 19.1"/><path d="M12 2l-2 2M12 2l2 2M12 22l-2-2M12 22l2-2M2 12l2-2M2 12l2 2M22 12l-2-2M22 12l-2 2"/></svg></span><h3>Winterdienst mit Räumprotokoll</h3><p class="muted">Räum- und Streudienst für Zufahrten, Wege und Eingänge mit Bereitschaft nach Wetterlage. Jeder Einsatz wird protokolliert – Ihr Haftungsnachweis gegenüber Mietern und Versicherung. Preis auf Anfrage. <!-- TODO: Winterdienst-Kapazität bestätigen --></p></article>
       <article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></span><h3>Leistungsnachweise</h3><p class="muted">Jeder Einsatz wird dokumentiert – per Foto oder PDF mit Datum und Leistung. Ideal für Eigentümerversammlungen und die Nebenkostenabrechnung.</p></article>
       <article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 7a7 7 0 100 10M4 10h10M4 14h10"/></svg></span><h3>Rechnung mit ausgewiesener MwSt.</h3><p class="muted">Übersichtliche Monatsrechnungen mit ausgewiesener Mehrwertsteuer und Leistungsaufstellung – auf Wunsch je Objekt oder Kostenstelle getrennt. <!-- TODO: Prüfen, ob Kleinunternehmerregelung gilt --></p></article>
     </div>
   </div>
 </section>
-<section class="section" id="zusammenarbeit" aria-labelledby="coop-title">
+<section class="section" aria-labelledby="kompakt-title">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Im Vertrag</span>
-      <h2 id="coop-title">So läuft die Zusammenarbeit</h2>
-      <p>Damit Sie sich um nichts kümmern müssen, haben wir feste Abläufe – vom Einsatzplan bis zur Rechnung.</p>
+    <div class="section-head"><span class="eyebrow">Sicherheit &amp; Zusammenarbeit</span><h2 id="kompakt-title">Worauf Sie sich verlassen können</h2></div>
+    <div class="grid grid-2">
+      <div class="card reveal"><h3 class="h-small">Sicherheit &amp; Verlässlichkeit</h3><ul class="usecases usecases--plain"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><circle cx="8.5" cy="11" r="2.5"/><path d="M4.5 18c.5-2 2-3 4-3s3.5 1 4 3M14 9h5M14 13h5"/></svg><div><strong>Feste, geprüfte Mitarbeiter</strong><span>Unsere Mitarbeiter legen ein polizeiliches Führungszeugnis vor und sind fest bei uns beschäftigt.</span></div></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3L21 2M17 6l3 3M15 8l2 2"/></svg><div><strong>Schlüsselübergabe mit Protokoll</strong><span>Schlüssel werden dokumentiert übergeben, sicher verwahrt und nur von eingewiesenen Mitarbeitern genutzt.</span></div></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg><div><strong>Diskretes Arbeiten</strong><span>In Praxen und Büros arbeiten wir leise, vertraulich und außerhalb Ihrer Kernzeiten – auf Wunsch mit Verschwiegenheitserklärung.</span></div></li></ul><a class="link-arrow mt-1" href="../servicepakete/#sicherheit">Alle Details</a></div>
+      <div class="card reveal"><h3 class="h-small">So läuft die Zusammenarbeit</h3><ul class="usecases usecases--plain"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><div><strong>Fester Rhythmus &amp; Einsatzplan</strong><span>Sie erhalten einen festen Einsatzplan mit Wochentag und Zeitfenster – planbar für Sie und Ihre Mieter oder Mitarbeiter.</span></div></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><div><strong>Leistungsnachweis nach jedem Einsatz</strong><span>Nach jedem Einsatz dokumentieren wir die erledigten Arbeiten per Foto oder PDF – auf Wunsch direkt an Ihre Verwaltung.</span></div></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/><path d="M16 4.5a3.5 3.5 0 010 7M22 20c0-3-1.8-5.5-4.5-6.5"/></svg><div><strong>Vertretung geregelt</strong><span>Bei Krankheit oder Urlaub übernimmt eine eingewiesene Vertretung – Ihr Objekt bleibt lückenlos betreut.</span></div></li></ul><a class="link-arrow mt-1" href="../servicepakete/#zusammenarbeit">Alle Details</a></div>
     </div>
-    <div class="grid grid-3"><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><h3>Fester Rhythmus &amp; Einsatzplan</h3><p class="muted">Sie erhalten einen festen Einsatzplan mit Wochentag und Zeitfenster – planbar für Sie und Ihre Mieter oder Mitarbeiter.</p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></span><h3>Leistungsnachweis nach jedem Einsatz</h3><p class="muted">Nach jedem Einsatz dokumentieren wir die erledigten Arbeiten per Foto oder PDF – auf Wunsch direkt an Ihre Verwaltung.</p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21l1.6-4.6A8.9 8.9 0 1112 21a9 9 0 01-4.4-1.2z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.3-1.8-.9-.7.7a4 4 0 01-2.1-2.1l.7-.7-.9-1.8z"/></svg></span><h3>Ansprechpartner per WhatsApp</h3><p class="muted">Ihr fester Ansprechpartner ist per WhatsApp, Telefon und E-Mail erreichbar – kurze Wege, schnelle Antworten.</p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/><path d="M16 4.5a3.5 3.5 0 010 7M22 20c0-3-1.8-5.5-4.5-6.5"/></svg></span><h3>Vertretung geregelt</h3><p class="muted">Bei Krankheit oder Urlaub übernimmt eine eingewiesene Vertretung – Ihr Objekt bleibt lückenlos betreut.</p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 7a7 7 0 100 10M4 10h10M4 14h10"/></svg></span><h3>Monatliche Rechnung</h3><p class="muted">Eine übersichtliche Rechnung pro Monat mit ausgewiesener MwSt. und Leistungsaufstellung. <!-- TODO: Prüfen, ob Kleinunternehmerregelung gilt --></p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2M9 12l2 2 4-4"/></svg></span><h3>Qualitätskontrolle im festen Intervall</h3><p class="muted">Wir prüfen unsere Arbeit regelmäßig selbst – je nach Paket monatlich oder quartalsweise – und besprechen das Ergebnis mit Ihnen.</p></article></div>
   </div>
 </section>
-<section class="section section--alt" id="sicherheit" aria-labelledby="sich-title">
+<section class="section section--alt" aria-labelledby="ps-title">
   <div class="container">
-    <div class="section-head section-head--center">
-      <span class="eyebrow">Sicherheit &amp; Verlässlichkeit</span>
-      <h2 id="sich-title">Wem Sie Ihre Schlüssel anvertrauen</h2>
-    </div>
-    <div class="grid grid-3"><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><circle cx="8.5" cy="11" r="2.5"/><path d="M4.5 18c.5-2 2-3 4-3s3.5 1 4 3M14 9h5M14 13h5"/></svg></span><h3>Feste, geprüfte Mitarbeiter</h3><p class="muted">Unsere Mitarbeiter legen ein polizeiliches Führungszeugnis vor und sind fest bei uns beschäftigt.</p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/><path d="M16 4.5a3.5 3.5 0 010 7M22 20c0-3-1.8-5.5-4.5-6.5"/></svg></span><h3>Kein wechselndes Personal</h3><p class="muted">Sie haben immer dieselben Gesichter vor Ort – das schafft Vertrauen und Routine in Ihrem Objekt.</p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3L21 2M17 6l3 3M15 8l2 2"/></svg></span><h3>Schlüsselübergabe mit Protokoll</h3><p class="muted">Schlüssel werden dokumentiert übergeben, sicher verwahrt und nur von eingewiesenen Mitarbeitern genutzt.</p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Betriebshaftpflicht</h3><p class="muted">Für den Fall der Fälle sind wir abgesichert. <!-- TODO: Betriebshaftpflicht bestätigen (Versicherer, Deckungssumme) – bis dahin Formulierung prüfen --> Nachweis auf Anfrage.</p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></span><h3>Diskretes Arbeiten</h3><p class="muted">In Praxen und Büros arbeiten wir leise, vertraulich und außerhalb Ihrer Kernzeiten – auf Wunsch mit Verschwiegenheitserklärung.</p></article></div>
-  </div>
-</section>
-<section class="section" aria-labelledby="ps-title">
-  <div class="container">
-    <div class="section-head section-head--center"><span class="eyebrow">Pakete</span><h2 id="ps-title">Passende Servicepakete</h2></div>
-    <div class="price-toggle" role="group" aria-label="Preisanzeige wählen">
-  <button type="button" class="price-toggle-btn" data-price-mode="privat" aria-pressed="true">Privat <small>(inkl. MwSt.)</small></button>
-  <button type="button" class="price-toggle-btn" data-price-mode="gewerbe" aria-pressed="false">Gewerbe <small>(zzgl. MwSt.)</small></button>
+    <div class="section-head section-head--center"><span class="eyebrow">Pakete für Geschäftskunden</span><h2 id="ps-title">Passende Servicepakete</h2>
+      <p>Preise für Gewerbekunden zzgl. MwSt. – je Objekt oder Kostenstelle abgerechnet, mit Leistungsnachweis.</p></div>
+    <div data-price-scope="gewerbe"><div class="price-toggle" role="group" aria-label="Preisanzeige wählen">
+  <button type="button" class="price-toggle-btn" data-price-mode="privat" aria-pressed="false">Privat <small>(inkl. MwSt.)</small></button>
+  <button type="button" class="price-toggle-btn" data-price-mode="gewerbe" aria-pressed="true">Gewerbe <small>(zzgl. MwSt.)</small></button>
 </div><div class="compare"><article class="plan reveal">
   
   <h3>Basis</h3>
-  <p class="plan-for">Für Privathaushalte &amp; kleine Objekte</p>
+  <p class="plan-for">Für kleine Gewerbeobjekte &amp; Einzelpraxen</p>
   <!-- TODO: Preise für Paket Basis eintragen: data-brutto (Privat, inkl. MwSt.) und data-netto (Gewerbe, zzgl. MwSt.) -->
   <p class="price" data-price data-brutto="ab TODO €" data-netto="ab TODO €">ab TODO € <small>/ Monat</small></p>
   <p class="price-note" data-price-note data-brutto="inkl. MwSt. · Festpreis nach kostenloser Besichtigung" data-netto="zzgl. MwSt. · Festpreis nach kostenloser Besichtigung">inkl. MwSt. · Festpreis nach kostenloser Besichtigung</p>
   <dl>
-    <dt>Intervall</dt><dd>Monatlich</dd>
+    <dt>Intervall</dt><dd>Wöchentlich</dd>
     <dt>Laufzeit</dt><dd>12 Monate <!-- TODO: Laufzeit bestätigen --></dd>
   </dl>
-  <ul class="check-list"><li>1 Leistungsbereich nach Wahl</li><li>Einsatz 1× pro Monat</li><li>Fester Ansprechpartner</li><li>Schriftlicher Leistungsumfang</li></ul>
+  <ul class="check-list"><li>1 Leistungsbereich nach Wahl</li><li>Fester Einsatzplan je Objekt</li><li>Fester Ansprechpartner</li><li>Monatsrechnung mit ausgewiesener MwSt.</li></ul>
   <a class="btn btn--ghost btn--block" href="../servicepakete/#vertragsanfrage">Angebot anfordern</a>
 </article><article class="plan plan--featured reveal">
   <span class="plan-badge">Beliebt</span>
@@ -358,15 +351,15 @@
   <p class="price" data-price data-brutto="ab TODO €" data-netto="ab TODO €">ab TODO € <small>/ Monat</small></p>
   <p class="price-note" data-price-note data-brutto="inkl. MwSt. · Festpreis nach kostenloser Besichtigung" data-netto="zzgl. MwSt. · Festpreis nach kostenloser Besichtigung">inkl. MwSt. · Festpreis nach kostenloser Besichtigung</p>
   <dl>
-    <dt>Intervall</dt><dd>14-tägig oder wöchentlich</dd>
+    <dt>Intervall</dt><dd>Mehrmals wöchentlich</dd>
     <dt>Laufzeit</dt><dd>12 oder 24 Monate <!-- TODO: Laufzeit bestätigen --></dd>
   </dl>
-  <ul class="check-list"><li>2 Leistungsbereiche kombinierbar</li><li>Einsätze 2–4× pro Monat</li><li>Vorrang bei Terminen</li><li>Quartalsweise Qualitätskontrolle</li><li>Leistungsnachweis per Foto/PDF</li></ul>
+  <ul class="check-list"><li>2 Leistungsbereiche kombinierbar</li><li>Leistungsnachweis per Foto/PDF nach jedem Einsatz</li><li>Vorrang bei Terminen</li><li>Quartalsweise Qualitätskontrolle</li><li>Rechnung je Objekt oder Kostenstelle</li></ul>
   <a class="btn btn--gold btn--block" href="../servicepakete/#vertragsanfrage">Angebot anfordern</a>
 </article><article class="plan reveal">
   
   <h3>Premium</h3>
-  <p class="plan-for">Für Hausverwaltungen &amp; Gewerbeobjekte</p>
+  <p class="plan-for">Für Hausverwaltungen &amp; Objektportfolios</p>
   <!-- TODO: Preise für Paket Premium eintragen: data-brutto (Privat, inkl. MwSt.) und data-netto (Gewerbe, zzgl. MwSt.) -->
   <p class="price" data-price data-brutto="ab TODO €" data-netto="ab TODO €">ab TODO € <small>/ Monat</small></p>
   <p class="price-note" data-price-note data-brutto="inkl. MwSt. · Festpreis nach kostenloser Besichtigung" data-netto="zzgl. MwSt. · Festpreis nach kostenloser Besichtigung">inkl. MwSt. · Festpreis nach kostenloser Besichtigung</p>
@@ -374,16 +367,16 @@
     <dt>Intervall</dt><dd>Individuell (bis täglich)</dd>
     <dt>Laufzeit</dt><dd>24 Monate <!-- TODO: Laufzeit bestätigen --></dd>
   </dl>
-  <ul class="check-list"><li>Reinigung, Garten &amp; Handwerk komplett</li><li>Individueller Einsatzplan</li><li>Höchste Terminpriorität</li><li>Monatliche Qualitätskontrolle</li><li>Digitale Leistungsnachweise</li><li>Kleinreparaturen inklusive (Kontingent)</li></ul>
+  <ul class="check-list"><li>Reinigung, Garten, Winterdienst &amp; Handwerk komplett</li><li>Einsatzplan je Objekt, Vertretung geregelt</li><li>Höchste Terminpriorität</li><li>Monatliche Qualitätskontrolle mit Bericht</li><li>Digitale Leistungsnachweise für die Nebenkostenabrechnung</li><li>Kleinreparaturen bis TODO Std./Monat inklusive</li></ul>
   <a class="btn btn--ghost btn--block" href="../servicepakete/#vertragsanfrage">Angebot anfordern</a>
-</article></div>
+</article></div></div>
   </div>
 </section>
 <section class="section section--tight">
   <div class="container">
     <div class="cta-band reveal">
   <div><h2>Objekt besichtigen lassen?</h2><p>Wir kommen kostenlos vorbei und erstellen Ihnen innerhalb von 48 h ein Festpreisangebot – inklusive Leistungsverzeichnis.</p></div>
-  <div class="btn-row"><a class="btn" href="../servicepakete/#vertragsanfrage">Vertragsanfrage stellen</a><a class="btn btn--ghost" href="tel:+4915114964367"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg> 0151 14964367</a></div>
+  <div class="btn-row"><a class="btn" href="../servicepakete/#vertragsanfrage">Vertragsanfrage stellen</a><a class="btn btn--ghost" href="tel:+4915114964367" data-cfg-href="tel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg> <span data-cfg="telefonAnzeige">0151 14964367</span></a></div>
 </div>
   </div>
 </section>
@@ -397,11 +390,11 @@
           <img src="../images/logo-mark.svg" alt="" width="44" height="44">
           <span class="brand-text"><span class="brand-name">AREALWERK PLUS</span><span class="brand-sub">Dienstleistungen</span></span>
         </a>
-        <p>Reinigung, Garten- &amp; Grünflächenpflege und Handwerkerservice in Rodgau, Kreis Offenbach und Rhein-Main-Gebiet – alles aus einer Hand. <em>Qualität, die überzeugt.</em></p>
+        <p>Reinigung, Garten- &amp; Grünflächenpflege und Handwerkerservice in <span data-cfg="region">Rodgau, Kreis Offenbach und Rhein-Main-Gebiet</span> – alles aus einer Hand. <em>Qualität, die überzeugt.</em></p>
         <ul class="social" aria-label="Soziale Medien und Kontakt">
-          <li><a href="https://www.instagram.com/arealwerke_plus" target="_blank" rel="noopener" aria-label="Instagram (öffnet neues Fenster)" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></a></li>
-          <li><a href="https://wa.me/4915114964367" target="_blank" rel="noopener" aria-label="WhatsApp (öffnet neues Fenster)" title="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21l1.6-4.6A8.9 8.9 0 1112 21a9 9 0 01-4.4-1.2z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.3-1.8-.9-.7.7a4 4 0 01-2.1-2.1l.7-.7-.9-1.8z"/></svg></a></li>
-          <li><a href="mailto:arealwerkplus@icloud.com" aria-label="E-Mail senden" title="E-Mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></a></li>
+          <li><a href="https://www.instagram.com/arealwerke_plus" data-cfg-href="instagram" target="_blank" rel="noopener" aria-label="Instagram (öffnet neues Fenster)" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></a></li>
+          <li><a href="https://wa.me/4915114964367" data-cfg-href="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp (öffnet neues Fenster)" title="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21l1.6-4.6A8.9 8.9 0 1112 21a9 9 0 01-4.4-1.2z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.3-1.8-.9-.7.7a4 4 0 01-2.1-2.1l.7-.7-.9-1.8z"/></svg></a></li>
+          <li><a href="mailto:arealwerkplus@icloud.com" data-cfg-href="mail" aria-label="E-Mail senden" title="E-Mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></a></li>
         </ul>
       </div>
       <div>
@@ -420,27 +413,26 @@
           <li><a href="../ueber-uns/">Über uns</a></li>
           <li><a href="../referenzen/">Referenzen</a></li>
           <li><a href="../kontakt/">Kontakt</a></li>
-          <li><a href="../downloads/flyer.pdf" download>Flyer (PDF)</a></li>
+          <li data-cfg-wrap hidden><a href="#" data-cfg-href="flyer" data-root="../" download>Flyer (PDF)</a></li>
           <li><a href="../sitemap/">Sitemap</a></li>
         </ul>
       </div>
       <div>
         <h2>Kontakt</h2>
         <address>
-          <strong>Arealwerk Plus UG (haftungsbeschränkt)<span data-ig hidden> i. G.</span><!-- TODO: „i. G.“ einblenden (hidden entfernen), solange die HR-Eintragung läuft; danach Span löschen --></strong><br>
-          <!-- TODO: Straße und Hausnummer eintragen -->
-          [Straße Hausnummer]<br>
-          63110 Rodgau, Hessen
+          <strong><span data-cfg="firmaKurz">Arealwerk Plus UG (haftungsbeschränkt)</span><span data-ig> i. G.</span></strong><br>
+          <span data-cfg="strasse">[Straße Hausnummer]</span><br>
+          <span data-cfg="plzOrt">63110 Rodgau</span>, <span data-cfg="bundesland">Hessen</span>
         </address>
         <ul>
-          <li><a href="tel:+4915114964367"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg> 0151 14964367</a></li>
-          <li><a href="mailto:arealwerkplus@icloud.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg> arealwerkplus@icloud.com</a></li>
-          <li><a href="https://www.instagram.com/arealwerke_plus" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg> @arealwerke_plus</a></li>
+          <li><a class="" href="tel:+4915114964367" data-cfg-href="tel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg> <span data-cfg="telefonAnzeige">0151 14964367</span></a></li>
+          <li><a href="mailto:arealwerkplus@icloud.com" data-cfg-href="mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg> <span data-cfg="email">arealwerkplus@icloud.com</span></a></li>
+          <li><a href="https://www.instagram.com/arealwerke_plus" data-cfg-href="instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg> <span data-cfg="instagramHandle">@arealwerke_plus</span></a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© <span data-year>2026</span> Arealwerk Plus UG (haftungsbeschränkt)<span data-ig hidden> i. G.</span><!-- TODO: „i. G.“ einblenden (hidden entfernen), solange die HR-Eintragung läuft; danach Span löschen --></p>
+      <p>© <span data-year>2026</span> <span data-cfg="firmaKurz">Arealwerk Plus UG (haftungsbeschränkt)</span><span data-ig> i. G.</span></p>
       <ul>
         <li><a href="../impressum/">Impressum</a></li>
         <li><a href="../datenschutz/">Datenschutz</a></li>
@@ -453,13 +445,13 @@
 
 <!-- Mobile Aktionsleiste (nur auf kleinen Bildschirmen sichtbar) -->
 <nav class="mobile-bar" aria-label="Schnellkontakt">
-  <a href="tel:+4915114964367"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg><span>Anrufen</span></a>
-  <!-- TODO: WhatsApp-Nummer prüfen (aktuell = Mobilnummer) -->
-  <a href="https://wa.me/4915114964367" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21l1.6-4.6A8.9 8.9 0 1112 21a9 9 0 01-4.4-1.2z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.3-1.8-.9-.7.7a4 4 0 01-2.1-2.1l.7-.7-.9-1.8z"/></svg><span>WhatsApp</span></a>
+  <a href="tel:+4915114964367" data-cfg-href="tel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg><span>Anrufen</span></a>
+  <a href="https://wa.me/4915114964367" data-cfg-href="whatsapp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21l1.6-4.6A8.9 8.9 0 1112 21a9 9 0 01-4.4-1.2z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.3-1.8-.9-.7.7a4 4 0 01-2.1-2.1l.7-.7-.9-1.8z"/></svg><span>WhatsApp</span></a>
   <a class="is-primary" href="../kontakt/#anfrage"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg><span>Anfrage</span></a>
 </nav>
 
 <button class="to-top" type="button" aria-label="Nach oben scrollen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg></button>
-<script src="../js/main.js" defer></script>
+<script src="../js/config.js?v=1793836725"></script>
+<script src="../js/main.js?v=1793836725" defer></script>
 </body>
 </html>

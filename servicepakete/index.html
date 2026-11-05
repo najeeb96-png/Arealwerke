@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Servicepakete & Wartungsverträge – Rodgau & Rhein-Main | Arealwerk Plus UG (haftungsbeschränkt)</title>
 <meta name="description" content="Wartungsverträge mit fester Laufzeit für Reinigung, Grünflächenpflege und Handwerkerservice in Rodgau, Kreis Offenbach und Rhein-Main-Gebiet. Planbare Kosten, fester Ansprechpartner, Leistungsnachweise.">
-<!-- TODO: Testphase – zum Start noindex entfernen (TEST_MODE) -->
-<meta name="robots" content="noindex, nofollow">
-<!-- TODO: Bei eigener Domain BASE-URL in allen canonical/og-Tags ersetzen (siehe README) -->
+<meta name="robots" content="noindex, nofollow" data-cfg-robots="index, follow">
 <link rel="canonical" href="https://najeeb96-png.github.io/Arealwerke/servicepakete/">
 <meta name="theme-color" content="#0e1012">
 <meta property="og:type" content="website">
@@ -25,9 +23,9 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/style.css?v=1793836725">
 
-<script type="application/ld+json">
+<script type="application/ld+json" data-ld="firma">
 {
   "@context": "https://schema.org",
   "@type": [
@@ -35,7 +33,7 @@
     "HomeAndConstructionBusiness"
   ],
   "@id": "https://najeeb96-png.github.io/Arealwerke/#firma",
-  "name": "Arealwerk Plus UG (haftungsbeschränkt)",
+  "name": "Arealwerk Plus UG (haftungsbeschränkt) i. G.",
   "alternateName": "AREALWERK PLUS Dienstleistungen",
   "legalName": "Arealwerk Plus UG (haftungsbeschränkt)",
   "slogan": "Qualität, die überzeugt.",
@@ -208,6 +206,13 @@
               "@type": "Service",
               "name": "Laubentfernung"
             }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Winterdienst"
+            }
           }
         ]
       },
@@ -271,13 +276,9 @@
       <img src="../images/logo-mark.svg" alt="" width="44" height="44">
       <span class="brand-text"><span class="brand-name">AREALWERK PLUS</span><span class="brand-sub">Dienstleistungen</span></span>
     </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen">
-      <span class="nav-toggle-bars"></span>
-    </button>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen"><span class="nav-toggle-bars"></span></button>
     <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
-      <ul class="nav-list">
-        <li><a href="../">Start</a></li><li><button class="nav-sub-toggle" type="button" aria-expanded="false" aria-controls="nav-sub-leistungen">Leistungen <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button><ul class="nav-sub" id="nav-sub-leistungen"><li><a href="../reinigung/"><span class="dot" style="background:var(--c-blue)"></span>Reinigung</a></li><li><a href="../garten/"><span class="dot" style="background:var(--c-green)"></span>Garten & Grünflächen</a></li><li><a href="../handwerk/"><span class="dot" style="background:var(--c-gold)"></span>Handwerkerservice</a></li></ul></li><li><a href="../servicepakete/" aria-current="page">Servicepakete</a></li><li><a href="../gewerbe/">Gewerbe</a></li><li><a href="../referenzen/">Referenzen</a></li><li><a href="../ueber-uns/">Über uns</a></li><li><a href="../kontakt/">Kontakt</a></li>
-      </ul>
+      <ul class="nav-list"><li><a href="../">Start</a></li><li><button class="nav-sub-toggle" type="button" aria-expanded="false" aria-controls="nav-sub-leistungen">Leistungen <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button><ul class="nav-sub" id="nav-sub-leistungen"><li><a href="../reinigung/"><span class="dot" style="background:var(--c-blue)"></span>Reinigung</a></li><li><a href="../garten/"><span class="dot" style="background:var(--c-green)"></span>Garten & Grünflächen</a></li><li><a href="../handwerk/"><span class="dot" style="background:var(--c-gold)"></span>Handwerkerservice</a></li></ul></li><li><a href="../servicepakete/" aria-current="page">Servicepakete</a></li><li><a href="../gewerbe/">Gewerbe</a></li><li><a href="../referenzen/">Referenzen</a></li><li><a href="../ueber-uns/">Über uns</a></li><li><a href="../kontakt/">Kontakt</a></li></ul>
       <div class="nav-cta"><a class="btn btn--gold btn--small" href="../kontakt/#anfrage">Anfrage</a></div>
     </nav>
   </div>
@@ -330,9 +331,9 @@
     <div class="conditions mt-1">
       <div class="condition reveal"><div class="label">Intervalle</div><div class="value">wöchentlich · monatlich · vierteljährlich · jährlich</div></div>
       <div class="condition reveal"><div class="label">Feste Laufzeiten</div><div class="value">12 oder 24 Monate</div></div>
-      <div class="condition reveal"><div class="label">Kündigungsfrist</div><div class="value">TODO Monate zum Laufzeitende</div></div>
+      <div class="condition reveal"><div class="label">Kündigung</div><div class="value value--text">Kündigung zum Ende der Laufzeit mit TODO Monaten Frist. Für Verbraucher: Erstlaufzeit max. 24 Monate, danach unbefristet und monatlich kündbar (§ 309 Nr. 9 BGB). Mit Unternehmen individuell.</div></div>
     </div>
-    <p class="muted mt-1">Für Verbraucher gilt: Die Erstlaufzeit beträgt maximal 24 Monate. Danach läuft der Vertrag unbefristet weiter und kann jederzeit mit einer Frist von einem Monat gekündigt werden (§ 309 Nr. 9 BGB). Mit Unternehmen vereinbaren wir Laufzeit und Verlängerung individuell. <!-- TODO: Verlängerungsregel rechtlich prüfen lassen --></p>
+    <!-- TODO: Kündigungsfrist festlegen; Verlängerungsregel rechtlich prüfen lassen -->
   </div>
 </section>
 
@@ -343,7 +344,7 @@
       <h2 id="pk-title">Basis, Komfort oder Premium</h2>
       <p>Die Pakete sind Beispiele – wir stellen Ihren Vertrag individuell nach Objekt und Bedarf zusammen. Wählen Sie oben, ob Sie Preise für Privat- oder Gewerbekunden sehen möchten.</p>
     </div>
-    <div class="price-toggle" role="group" aria-label="Preisanzeige wählen">
+    <div data-price-scope="privat"><div class="price-toggle" role="group" aria-label="Preisanzeige wählen">
   <button type="button" class="price-toggle-btn" data-price-mode="privat" aria-pressed="true">Privat <small>(inkl. MwSt.)</small></button>
   <button type="button" class="price-toggle-btn" data-price-mode="gewerbe" aria-pressed="false">Gewerbe <small>(zzgl. MwSt.)</small></button>
 </div><div class="compare"><article class="plan reveal">
@@ -383,16 +384,16 @@
     <dt>Intervall</dt><dd>Individuell (bis täglich)</dd>
     <dt>Laufzeit</dt><dd>24 Monate <!-- TODO: Laufzeit bestätigen --></dd>
   </dl>
-  <ul class="check-list"><li>Reinigung, Garten &amp; Handwerk komplett</li><li>Individueller Einsatzplan</li><li>Höchste Terminpriorität</li><li>Monatliche Qualitätskontrolle</li><li>Digitale Leistungsnachweise</li><li>Kleinreparaturen inklusive (Kontingent)</li></ul>
+  <ul class="check-list"><li>Reinigung, Garten &amp; Handwerk komplett</li><li>Individueller Einsatzplan</li><li>Höchste Terminpriorität</li><li>Monatliche Qualitätskontrolle</li><li>Digitale Leistungsnachweise</li><li>Kleinreparaturen bis TODO Std./Monat inklusive</li></ul>
   <a class="btn btn--ghost btn--block" href="../servicepakete/#vertragsanfrage">Angebot anfordern</a>
-</article></div>
+</article></div></div>
     <h3 class="mt-2">Vergleichstabelle</h3>
     <!-- TODO: Preise, Laufzeiten und Kündigungsfristen in der Vergleichstabelle eintragen -->
 <div class="table-wrap reveal" tabindex="0" role="region" aria-label="Vergleichstabelle Servicepakete (horizontal scrollbar)">
   <table class="compare-table">
     <caption><span data-price-note data-brutto="Preise für Privatkunden inkl. gesetzlicher MwSt." data-netto="Preise für Gewerbekunden zzgl. gesetzlicher MwSt.">Preise für Privatkunden inkl. gesetzlicher MwSt.</span> Konditionen beispielhaft – verbindlich ist Ihr individuelles Angebot.</caption>
     <thead><tr><th scope="col">Leistung</th><th scope="col">Basis</th><th scope="col" class="featured">Komfort</th><th scope="col">Premium</th></tr></thead>
-    <tbody><tr><th scope='row'>Geeignet für</th><td>Privathaushalte, kleine Objekte</td><td>Mehrfamilienhäuser, Büros, Praxen</td><td>Hausverwaltungen, Gewerbe</td></tr><tr><th scope='row'>Leistungsbereiche</th><td>1 nach Wahl</td><td>2 kombinierbar</td><td>Alle 3 (Reinigung, Garten, Handwerk)</td></tr><tr><th scope='row'>Intervall</th><td>Monatlich</td><td>14-tägig / wöchentlich</td><td>Individuell, bis täglich</td></tr><tr><th scope='row'>Laufzeit</th><td>12 Monate</td><td>12 oder 24 Monate</td><td>24 Monate</td></tr><tr><th scope='row'>Kündigungsfrist</th><td>TODO Monate zum Laufzeitende</td><td>TODO Monate zum Laufzeitende</td><td>TODO Monate zum Laufzeitende</td></tr><tr><th scope='row'>Fester Ansprechpartner</th><td><span class='yes'>✓</span></td><td><span class='yes'>✓</span></td><td><span class='yes'>✓</span></td></tr><tr><th scope='row'>Vorrang bei Terminen</th><td><span class='no'>–</span></td><td><span class='yes'>✓</span></td><td><span class='yes'>✓ höchste Priorität</span></td></tr><tr><th scope='row'>Qualitätskontrolle</th><td>Jährlich</td><td>Quartalsweise</td><td>Monatlich</td></tr><tr><th scope='row'>Leistungsnachweis</th><td><span class='no'>–</span></td><td><span class='yes'>✓</span></td><td><span class='yes'>✓ digital</span></td></tr><tr><th scope='row'>Preis</th><td><span data-price data-brutto='ab TODO €/Monat' data-netto='ab TODO €/Monat'>ab TODO €/Monat</span></td><td><span data-price data-brutto='ab TODO €/Monat' data-netto='ab TODO €/Monat'>ab TODO €/Monat</span></td><td><span data-price data-brutto='ab TODO €/Monat' data-netto='ab TODO €/Monat'>ab TODO €/Monat</span></td></tr></tbody>
+    <tbody><tr><th scope='row'>Geeignet für</th><td>Privathaushalte, kleine Objekte</td><td>Mehrfamilienhäuser, Büros, Praxen</td><td>Hausverwaltungen, Gewerbe</td></tr><tr><th scope='row'>Leistungsbereiche</th><td>1 nach Wahl</td><td>2 kombinierbar</td><td>Alle 3 (Reinigung, Garten, Handwerk)</td></tr><tr><th scope='row'>Intervall</th><td>Monatlich</td><td>14-tägig / wöchentlich</td><td>Individuell, bis täglich</td></tr><tr><th scope='row'>Laufzeit</th><td>12 Monate</td><td>12 oder 24 Monate</td><td>24 Monate</td></tr><tr><th scope='row'>Kündigung</th><td colspan='3'>Kündigung zum Ende der Laufzeit mit TODO Monaten Frist. Für Verbraucher: Erstlaufzeit max. 24 Monate, danach unbefristet und monatlich kündbar (§ 309 Nr. 9 BGB). Mit Unternehmen individuell.</td></tr><tr><th scope='row'>Fester Ansprechpartner</th><td><span class='yes'>✓</span></td><td><span class='yes'>✓</span></td><td><span class='yes'>✓</span></td></tr><tr><th scope='row'>Vorrang bei Terminen</th><td><span class='no'>–</span></td><td><span class='yes'>✓</span></td><td><span class='yes'>✓ höchste Priorität</span></td></tr><tr><th scope='row'>Qualitätskontrolle</th><td>Jährlich</td><td>Quartalsweise</td><td>Monatlich</td></tr><tr><th scope='row'>Leistungsnachweis</th><td><span class='no'>–</span></td><td><span class='yes'>✓</span></td><td><span class='yes'>✓ digital</span></td></tr><tr><th scope='row'>Preis</th><td><span data-price data-brutto='ab TODO €/Monat' data-netto='ab TODO €/Monat'>ab TODO €/Monat</span></td><td><span data-price data-brutto='ab TODO €/Monat' data-netto='ab TODO €/Monat'>ab TODO €/Monat</span></td><td><span data-price data-brutto='ab TODO €/Monat' data-netto='ab TODO €/Monat'>ab TODO €/Monat</span></td></tr></tbody>
   </table>
 </div>
     <div class="grid grid-2 mt-2">
@@ -425,11 +426,8 @@
 
 <section class="section section--alt" id="zusammenarbeit" aria-labelledby="coop-title">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Im Vertrag</span>
-      <h2 id="coop-title">So läuft die Zusammenarbeit</h2>
-      <p>Damit Sie sich um nichts kümmern müssen, haben wir feste Abläufe – vom Einsatzplan bis zur Rechnung.</p>
-    </div>
+    <div class="section-head"><span class="eyebrow">Im Vertrag</span><h2 id="coop-title">So läuft die Zusammenarbeit</h2>
+      <p>Damit Sie sich um nichts kümmern müssen, haben wir feste Abläufe – vom Einsatzplan bis zur Rechnung.</p></div>
     <div class="grid grid-3"><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><h3>Fester Rhythmus &amp; Einsatzplan</h3><p class="muted">Sie erhalten einen festen Einsatzplan mit Wochentag und Zeitfenster – planbar für Sie und Ihre Mieter oder Mitarbeiter.</p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></span><h3>Leistungsnachweis nach jedem Einsatz</h3><p class="muted">Nach jedem Einsatz dokumentieren wir die erledigten Arbeiten per Foto oder PDF – auf Wunsch direkt an Ihre Verwaltung.</p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21l1.6-4.6A8.9 8.9 0 1112 21a9 9 0 01-4.4-1.2z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.3-1.8-.9-.7.7a4 4 0 01-2.1-2.1l.7-.7-.9-1.8z"/></svg></span><h3>Ansprechpartner per WhatsApp</h3><p class="muted">Ihr fester Ansprechpartner ist per WhatsApp, Telefon und E-Mail erreichbar – kurze Wege, schnelle Antworten.</p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/><path d="M16 4.5a3.5 3.5 0 010 7M22 20c0-3-1.8-5.5-4.5-6.5"/></svg></span><h3>Vertretung geregelt</h3><p class="muted">Bei Krankheit oder Urlaub übernimmt eine eingewiesene Vertretung – Ihr Objekt bleibt lückenlos betreut.</p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 7a7 7 0 100 10M4 10h10M4 14h10"/></svg></span><h3>Monatliche Rechnung</h3><p class="muted">Eine übersichtliche Rechnung pro Monat mit ausgewiesener MwSt. und Leistungsaufstellung. <!-- TODO: Prüfen, ob Kleinunternehmerregelung gilt --></p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2M9 12l2 2 4-4"/></svg></span><h3>Qualitätskontrolle im festen Intervall</h3><p class="muted">Wir prüfen unsere Arbeit regelmäßig selbst – je nach Paket monatlich oder quartalsweise – und besprechen das Ergebnis mit Ihnen.</p></article></div>
   </div>
 </section>
@@ -453,10 +451,7 @@
 
 <section class="section section--alt" id="sicherheit" aria-labelledby="sich-title">
   <div class="container">
-    <div class="section-head section-head--center">
-      <span class="eyebrow">Sicherheit &amp; Verlässlichkeit</span>
-      <h2 id="sich-title">Wem Sie Ihre Schlüssel anvertrauen</h2>
-    </div>
+    <div class="section-head section-head--center"><span class="eyebrow">Sicherheit &amp; Verlässlichkeit</span><h2 id="sich-title">Wem Sie Ihre Schlüssel anvertrauen</h2></div>
     <div class="grid grid-3"><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><circle cx="8.5" cy="11" r="2.5"/><path d="M4.5 18c.5-2 2-3 4-3s3.5 1 4 3M14 9h5M14 13h5"/></svg></span><h3>Feste, geprüfte Mitarbeiter</h3><p class="muted">Unsere Mitarbeiter legen ein polizeiliches Führungszeugnis vor und sind fest bei uns beschäftigt.</p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/><path d="M16 4.5a3.5 3.5 0 010 7M22 20c0-3-1.8-5.5-4.5-6.5"/></svg></span><h3>Kein wechselndes Personal</h3><p class="muted">Sie haben immer dieselben Gesichter vor Ort – das schafft Vertrauen und Routine in Ihrem Objekt.</p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3L21 2M17 6l3 3M15 8l2 2"/></svg></span><h3>Schlüsselübergabe mit Protokoll</h3><p class="muted">Schlüssel werden dokumentiert übergeben, sicher verwahrt und nur von eingewiesenen Mitarbeitern genutzt.</p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Betriebshaftpflicht</h3><p class="muted">Für den Fall der Fälle sind wir abgesichert. <!-- TODO: Betriebshaftpflicht bestätigen (Versicherer, Deckungssumme) – bis dahin Formulierung prüfen --> Nachweis auf Anfrage.</p></article><article class="card reveal"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></span><h3>Diskretes Arbeiten</h3><p class="muted">In Praxen und Büros arbeiten wir leise, vertraulich und außerhalb Ihrer Kernzeiten – auf Wunsch mit Verschwiegenheitserklärung.</p></article></div>
   </div>
 </section>
@@ -473,11 +468,11 @@
   <h3 id="vf-title">Vertragsanfrage</h3>
   <p class="muted">Erzählen Sie uns von Ihrem Objekt – Sie erhalten nach einer kostenlosen Besichtigung ein Festpreisangebot für Ihren Wartungsvertrag.</p>
   <div class="form-grid">
-    <!-- TODO: Web3Forms-Zugangsschlüssel eintragen (https://web3forms.com). Solange "TODO…" drinsteht, öffnet sich beim Absenden das E-Mail-Programm (mailto-Fallback). -->
     <input type="hidden" name="access_key" value="TODO_WEB3FORMS_ACCESS_KEY">
     <input type="hidden" name="subject" value="Neue Vertragsanfrage über die Webseite">
     <input type="hidden" name="from_name" value="Webseite Arealwerk Plus">
     <input type="hidden" name="redirect" value="https://najeeb96-png.github.io/Arealwerke/danke/">
+    <!-- Honeypot gegen Spam: bleibt für Menschen unsichtbar und leer -->
     <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
     <fieldset class="field full">
       <legend>Anfrage als <span class="req" aria-hidden="true">*</span></legend>
@@ -487,69 +482,31 @@
         <label class="option"><input type="radio" name="kundentyp" value="Hausverwaltung"><span>Hausverwaltung / Vermieter</span></label>
       </div>
     </fieldset>
-    <div class="field">
-      <label for="vf-name">Name / Ansprechpartner <span class="req" aria-hidden="true">*</span></label>
-      <input type="text" id="vf-name" name="name" autocomplete="name" required aria-describedby="vf-name-error" data-error="Bitte geben Sie Ihren Namen an.">
-      <span class="field-error" id="vf-name-error"></span>
-    </div>
-    <div class="field">
-      <label for="vf-firma">Firma (optional)</label>
-      <input type="text" id="vf-firma" name="firma" autocomplete="organization">
-    </div>
-    <div class="field">
-      <label for="vf-email">E-Mail <span class="req" aria-hidden="true">*</span></label>
-      <input type="email" id="vf-email" name="email" autocomplete="email" required aria-describedby="vf-email-error" data-error="Bitte geben Sie eine gültige E-Mail-Adresse an.">
-      <span class="field-error" id="vf-email-error"></span>
-    </div>
-    <div class="field">
-      <label for="vf-tel">Telefon</label>
-      <input type="tel" id="vf-tel" name="telefon" autocomplete="tel">
-    </div>
-    <div class="field">
-      <label for="vf-objekt">Objektart <span class="req" aria-hidden="true">*</span></label>
+    <div class="field"><label for="vf-name">Name / Ansprechpartner <span class="req" aria-hidden="true">*</span></label>
+      <input type="text" id="vf-name" name="name" autocomplete="name" required aria-describedby="vf-name-error" data-error="Bitte geben Sie Ihren Namen an."><span class="field-error" id="vf-name-error"></span></div>
+    <div class="field"><label for="vf-firma">Firma (optional)</label><input type="text" id="vf-firma" name="firma" autocomplete="organization"></div>
+    <div class="field"><label for="vf-email">E-Mail <span class="req" aria-hidden="true">*</span></label>
+      <input type="email" id="vf-email" name="email" autocomplete="email" required aria-describedby="vf-email-error" data-error="Bitte geben Sie eine gültige E-Mail-Adresse an."><span class="field-error" id="vf-email-error"></span></div>
+    <div class="field"><label for="vf-tel">Telefon</label><input type="tel" id="vf-tel" name="telefon" autocomplete="tel"></div>
+    <div class="field"><label for="vf-objekt">Objektart <span class="req" aria-hidden="true">*</span></label>
       <select id="vf-objekt" name="objektart" required aria-describedby="vf-objekt-error" data-error="Bitte wählen Sie eine Objektart.">
-        <option value="">Bitte wählen</option>
-        <option>Einfamilienhaus</option><option>Mehrfamilienhaus / Wohnanlage</option><option>Wohnung</option>
+        <option value="">Bitte wählen</option><option>Einfamilienhaus</option><option>Mehrfamilienhaus / Wohnanlage</option><option>Wohnung</option>
         <option>Büro</option><option>Praxis</option><option>Ladenlokal / Gewerbe</option><option>Außenanlage / Grundstück</option><option>Sonstiges</option>
-      </select>
-      <span class="field-error" id="vf-objekt-error"></span>
-    </div>
-    <div class="field">
-      <label for="vf-groesse">Objektgröße (ca. m² / Einheiten)</label>
-      <input type="text" id="vf-groesse" name="objektgroesse" placeholder="z. B. 250 m² oder 12 Wohneinheiten">
-    </div>
-    <fieldset class="field full" data-require-one>
+      </select><span class="field-error" id="vf-objekt-error"></span></div>
+    <div class="field"><label for="vf-groesse">Objektgröße (ca. m² / Einheiten)</label><input type="text" id="vf-groesse" name="objektgroesse" placeholder="z. B. 250 m² oder 12 Wohneinheiten"></div>
+    <fieldset class="field full" data-require-one data-error="Bitte wählen Sie mindestens eine Leistung aus.">
       <legend>Gewünschte Leistungen <span class="req" aria-hidden="true">*</span> <span class="hint">(Mehrfachauswahl)</span></legend>
-      <div class="options"><label class="option"><input type="checkbox" name="leistungen[]" value="Unterhaltsreinigung"><span>Unterhaltsreinigung</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Büroreinigung"><span>Büroreinigung</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Treppenhausreinigung"><span>Treppenhausreinigung</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Glas- & Fensterreinigung"><span>Glas- & Fensterreinigung</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Sanitärreinigung"><span>Sanitärreinigung</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Rasenpflege"><span>Rasenpflege</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Hecken- & Strauchschnitt"><span>Hecken- & Strauchschnitt</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Unkraut & Wege"><span>Unkraut & Wege</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Laubentfernung"><span>Laubentfernung</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Winterdienst (auf Anfrage)"><span>Winterdienst (auf Anfrage)</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Hausmeister-/Handwerkerservice"><span>Hausmeister-/Handwerkerservice</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Heizkörper-Check"><span>Heizkörper-Check</span></label></div>
-      <span class="field-error" aria-live="polite"></span>
+      <div class="options"><label class="option"><input type="checkbox" name="leistungen[]" value="Unterhaltsreinigung"><span>Unterhaltsreinigung</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Büroreinigung"><span>Büroreinigung</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Treppenhausreinigung"><span>Treppenhausreinigung</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Glas- & Fensterreinigung"><span>Glas- & Fensterreinigung</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Sanitärreinigung"><span>Sanitärreinigung</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Rasenpflege"><span>Rasenpflege</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Hecken- & Strauchschnitt"><span>Hecken- & Strauchschnitt</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Unkraut & Wege"><span>Unkraut & Wege</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Laubentfernung"><span>Laubentfernung</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Winterdienst"><span>Winterdienst</span></label><label class="option"><input type="checkbox" name="leistungen[]" value="Hausmeister-Rundgang & Kleinreparaturen"><span>Hausmeister-Rundgang & Kleinreparaturen</span></label></div><span class="field-error" aria-live="polite"></span>
     </fieldset>
-    <div class="field">
-      <label for="vf-intervall">Gewünschtes Intervall <span class="req" aria-hidden="true">*</span></label>
+    <div class="field"><label for="vf-intervall">Gewünschtes Intervall <span class="req" aria-hidden="true">*</span></label>
       <select id="vf-intervall" name="intervall" required aria-describedby="vf-intervall-error" data-error="Bitte wählen Sie ein Intervall.">
-        <option value="">Bitte wählen</option>
-        <option>Wöchentlich</option><option>14-tägig</option><option>Monatlich</option><option>Vierteljährlich</option><option>Saisonal</option><option>Jährlich</option><option>Noch offen – bitte beraten</option>
-      </select>
-      <span class="field-error" id="vf-intervall-error"></span>
-    </div>
-    <div class="field">
-      <label for="vf-laufzeit">Laufzeit</label>
-      <select id="vf-laufzeit" name="laufzeit">
-        <option value="">Bitte wählen</option>
-        <option>12 Monate</option><option>24 Monate</option><option>Unbefristet mit Kündigungsfrist</option><option>Noch offen – bitte beraten</option>
-      </select>
-    </div>
-    <div class="field">
-      <label for="vf-start">Gewünschter Start</label>
-      <input type="date" id="vf-start" name="startdatum" lang="de">
-    </div>
-    <div class="field">
-      <label for="vf-ort">Ort des Objekts</label>
-      <input type="text" id="vf-ort" name="objektort" autocomplete="address-level2" placeholder="PLZ / Ort">
-    </div>
-    <div class="field full">
-      <label for="vf-msg">Nachricht</label>
-      <textarea id="vf-msg" name="nachricht" placeholder="Besonderheiten, Zugang, gewünschte Zeiten, Leistungsnachweise …"></textarea>
-    </div>
+        <option value="">Bitte wählen</option><option>Wöchentlich</option><option>14-tägig</option><option>Monatlich</option><option>Vierteljährlich</option><option>Saisonal</option><option>Jährlich</option><option>Noch offen – bitte beraten</option>
+      </select><span class="field-error" id="vf-intervall-error"></span></div>
+    <div class="field"><label for="vf-laufzeit">Laufzeit</label>
+      <select id="vf-laufzeit" name="laufzeit"><option value="">Bitte wählen</option><option>12 Monate</option><option>24 Monate</option><option>Unbefristet mit Kündigungsfrist</option><option>Noch offen – bitte beraten</option></select></div>
+    <div class="field"><label for="vf-start">Gewünschter Start</label><input type="date" id="vf-start" name="startdatum" lang="de"></div>
+    <div class="field"><label for="vf-ort">Ort des Objekts</label><input type="text" id="vf-ort" name="objektort" autocomplete="address-level2" placeholder="PLZ / Ort"></div>
+    <div class="field full"><label for="vf-msg">Nachricht</label><textarea id="vf-msg" name="nachricht" placeholder="Besonderheiten, Zugang, gewünschte Zeiten, Leistungsnachweise …"></textarea></div>
     <div class="field full">
       <label class="consent" for="vf-dsgvo">
         <input type="checkbox" id="vf-dsgvo" name="datenschutz" value="akzeptiert" required aria-describedby="vf-dsgvo-error" data-error="Bitte stimmen Sie der Datenverarbeitung zu.">
@@ -558,27 +515,17 @@
       <span class="field-error" id="vf-dsgvo-error"></span>
     </div>
   </div>
-  <div class="form-foot">
-    <div><p class="no-ads"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg> Keine Werbung – wir melden uns ausschließlich zu Ihrer Anfrage.</p><p class="muted">* Pflichtfeld · Kostenlos &amp; unverbindlich</p></div>
-    <button class="btn btn--gold" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg> Vertragsanfrage senden</button>
-  </div>
+  <div class="form-foot"><div><p class="no-ads"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg> Keine Werbung – wir melden uns ausschließlich zu Ihrer Anfrage.</p><p class="muted">* Pflichtfeld · Kostenlos &amp; unverbindlich</p></div><button class="btn btn--gold" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg> Vertragsanfrage senden</button></div>
   <div class="form-status" role="status" aria-live="polite" tabindex="-1"></div>
 </form>
       <div class="contact-info">
-  <a class="contact-line" href="tel:+4915114964367"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg></span><span><small>Telefon</small><strong>0151 14964367</strong></span></a>
-  <a class="contact-line" href="mailto:arealwerkplus@icloud.com"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></span><span><small>E-Mail</small><strong>arealwerkplus@icloud.com</strong></span></a>
-  <!-- TODO: WhatsApp-Nummer prüfen (aktuell = Mobilnummer) -->
-  <a class="contact-line theme-green" href="https://wa.me/4915114964367" target="_blank" rel="noopener"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21l1.6-4.6A8.9 8.9 0 1112 21a9 9 0 01-4.4-1.2z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.3-1.8-.9-.7.7a4 4 0 01-2.1-2.1l.7-.7-.9-1.8z"/></svg></span><span><small>WhatsApp</small><strong>Nachricht schreiben</strong></span></a>
-  <a class="contact-line" href="https://www.instagram.com/arealwerke_plus" target="_blank" rel="noopener"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></span><span><small>Instagram</small><strong>@arealwerke_plus</strong></span></a>
-  <div class="contact-line" style="cursor:default"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span><small>Standort</small><strong>63110 Rodgau, Hessen</strong><span class="muted small">Einsatzgebiet: Rodgau, Kreis Offenbach und Rhein-Main-Gebiet</span></span></div>
+  
+  <a class="contact-line" href="mailto:arealwerkplus@icloud.com" data-cfg-href="mail"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></span><span><small>E-Mail</small><strong data-cfg="email">arealwerkplus@icloud.com</strong></span></a>
+  <a class="contact-line" href="https://www.instagram.com/arealwerke_plus" data-cfg-href="instagram" target="_blank" rel="noopener"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></span><span><small>Instagram</small><strong data-cfg="instagramHandle">@arealwerke_plus</strong></span></a>
+  <div class="contact-line contact-line--static"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span><small>Standort</small><strong><span data-cfg="plzOrt">63110 Rodgau</span>, <span data-cfg="bundesland">Hessen</span></strong><span class="muted small">Einsatzgebiet: <span data-cfg="region">Rodgau, Kreis Offenbach und Rhein-Main-Gebiet</span></span></span></div>
   <div class="card">
     <h3 class="h-small"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Erreichbarkeit</h3>
-    <!-- TODO: Öffnungszeiten / Erreichbarkeit eintragen (auch im JSON-LD openingHoursSpecification) -->
-    <table class="hours">
-      <tr><th scope="row">Mo – Fr</th><td>[Zeiten folgen]</td></tr>
-      <tr><th scope="row">Sa</th><td>[Zeiten folgen]</td></tr>
-      <tr><th scope="row">So &amp; Feiertage</th><td>[Zeiten folgen]</td></tr>
-    </table>
+    <table class="hours"><tbody data-cfg-hours><tr><th scope='row'>Mo – Fr</th><td>[Zeiten folgen]</td></tr><tr><th scope='row'>Sa</th><td>[Zeiten folgen]</td></tr><tr><th scope='row'>So & Feiertage</th><td>[Zeiten folgen]</td></tr></tbody></table>
     <p class="muted mt-1 small">Einsätze sind nach Absprache auch außerhalb dieser Zeiten möglich.</p>
   </div>
   
@@ -596,11 +543,11 @@
           <img src="../images/logo-mark.svg" alt="" width="44" height="44">
           <span class="brand-text"><span class="brand-name">AREALWERK PLUS</span><span class="brand-sub">Dienstleistungen</span></span>
         </a>
-        <p>Reinigung, Garten- &amp; Grünflächenpflege und Handwerkerservice in Rodgau, Kreis Offenbach und Rhein-Main-Gebiet – alles aus einer Hand. <em>Qualität, die überzeugt.</em></p>
+        <p>Reinigung, Garten- &amp; Grünflächenpflege und Handwerkerservice in <span data-cfg="region">Rodgau, Kreis Offenbach und Rhein-Main-Gebiet</span> – alles aus einer Hand. <em>Qualität, die überzeugt.</em></p>
         <ul class="social" aria-label="Soziale Medien und Kontakt">
-          <li><a href="https://www.instagram.com/arealwerke_plus" target="_blank" rel="noopener" aria-label="Instagram (öffnet neues Fenster)" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></a></li>
-          <li><a href="https://wa.me/4915114964367" target="_blank" rel="noopener" aria-label="WhatsApp (öffnet neues Fenster)" title="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21l1.6-4.6A8.9 8.9 0 1112 21a9 9 0 01-4.4-1.2z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.3-1.8-.9-.7.7a4 4 0 01-2.1-2.1l.7-.7-.9-1.8z"/></svg></a></li>
-          <li><a href="mailto:arealwerkplus@icloud.com" aria-label="E-Mail senden" title="E-Mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></a></li>
+          <li><a href="https://www.instagram.com/arealwerke_plus" data-cfg-href="instagram" target="_blank" rel="noopener" aria-label="Instagram (öffnet neues Fenster)" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></a></li>
+          <li><a href="https://wa.me/4915114964367" data-cfg-href="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp (öffnet neues Fenster)" title="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21l1.6-4.6A8.9 8.9 0 1112 21a9 9 0 01-4.4-1.2z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.3-1.8-.9-.7.7a4 4 0 01-2.1-2.1l.7-.7-.9-1.8z"/></svg></a></li>
+          <li><a href="mailto:arealwerkplus@icloud.com" data-cfg-href="mail" aria-label="E-Mail senden" title="E-Mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></a></li>
         </ul>
       </div>
       <div>
@@ -619,27 +566,26 @@
           <li><a href="../ueber-uns/">Über uns</a></li>
           <li><a href="../referenzen/">Referenzen</a></li>
           <li><a href="../kontakt/">Kontakt</a></li>
-          <li><a href="../downloads/flyer.pdf" download>Flyer (PDF)</a></li>
+          <li data-cfg-wrap hidden><a href="#" data-cfg-href="flyer" data-root="../" download>Flyer (PDF)</a></li>
           <li><a href="../sitemap/">Sitemap</a></li>
         </ul>
       </div>
       <div>
         <h2>Kontakt</h2>
         <address>
-          <strong>Arealwerk Plus UG (haftungsbeschränkt)<span data-ig hidden> i. G.</span><!-- TODO: „i. G.“ einblenden (hidden entfernen), solange die HR-Eintragung läuft; danach Span löschen --></strong><br>
-          <!-- TODO: Straße und Hausnummer eintragen -->
-          [Straße Hausnummer]<br>
-          63110 Rodgau, Hessen
+          <strong><span data-cfg="firmaKurz">Arealwerk Plus UG (haftungsbeschränkt)</span><span data-ig> i. G.</span></strong><br>
+          <span data-cfg="strasse">[Straße Hausnummer]</span><br>
+          <span data-cfg="plzOrt">63110 Rodgau</span>, <span data-cfg="bundesland">Hessen</span>
         </address>
         <ul>
-          <li><a href="tel:+4915114964367"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg> 0151 14964367</a></li>
-          <li><a href="mailto:arealwerkplus@icloud.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg> arealwerkplus@icloud.com</a></li>
-          <li><a href="https://www.instagram.com/arealwerke_plus" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg> @arealwerke_plus</a></li>
+          <li><a class="" href="tel:+4915114964367" data-cfg-href="tel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg> <span data-cfg="telefonAnzeige">0151 14964367</span></a></li>
+          <li><a href="mailto:arealwerkplus@icloud.com" data-cfg-href="mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg> <span data-cfg="email">arealwerkplus@icloud.com</span></a></li>
+          <li><a href="https://www.instagram.com/arealwerke_plus" data-cfg-href="instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg> <span data-cfg="instagramHandle">@arealwerke_plus</span></a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© <span data-year>2026</span> Arealwerk Plus UG (haftungsbeschränkt)<span data-ig hidden> i. G.</span><!-- TODO: „i. G.“ einblenden (hidden entfernen), solange die HR-Eintragung läuft; danach Span löschen --></p>
+      <p>© <span data-year>2026</span> <span data-cfg="firmaKurz">Arealwerk Plus UG (haftungsbeschränkt)</span><span data-ig> i. G.</span></p>
       <ul>
         <li><a href="../impressum/">Impressum</a></li>
         <li><a href="../datenschutz/">Datenschutz</a></li>
@@ -652,13 +598,13 @@
 
 <!-- Mobile Aktionsleiste (nur auf kleinen Bildschirmen sichtbar) -->
 <nav class="mobile-bar" aria-label="Schnellkontakt">
-  <a href="tel:+4915114964367"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg><span>Anrufen</span></a>
-  <!-- TODO: WhatsApp-Nummer prüfen (aktuell = Mobilnummer) -->
-  <a href="https://wa.me/4915114964367" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21l1.6-4.6A8.9 8.9 0 1112 21a9 9 0 01-4.4-1.2z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.3-1.8-.9-.7.7a4 4 0 01-2.1-2.1l.7-.7-.9-1.8z"/></svg><span>WhatsApp</span></a>
+  <a href="tel:+4915114964367" data-cfg-href="tel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg><span>Anrufen</span></a>
+  <a href="https://wa.me/4915114964367" data-cfg-href="whatsapp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21l1.6-4.6A8.9 8.9 0 1112 21a9 9 0 01-4.4-1.2z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.3-1.8-.9-.7.7a4 4 0 01-2.1-2.1l.7-.7-.9-1.8z"/></svg><span>WhatsApp</span></a>
   <a class="is-primary" href="../kontakt/#anfrage"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg><span>Anfrage</span></a>
 </nav>
 
 <button class="to-top" type="button" aria-label="Nach oben scrollen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg></button>
-<script src="../js/main.js" defer></script>
+<script src="../js/config.js?v=1793836725"></script>
+<script src="../js/main.js?v=1793836725" defer></script>
 </body>
 </html>

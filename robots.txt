@@ -1,6 +1,5 @@
 # robots.txt – Arealwerk Plus UG (haftungsbeschränkt)
-# TODO: Bei eigener Domain die Sitemap-URL anpassen
-# TODO: Testphase – solange die Seite nicht öffentlich beworben wird, ist die Indexierung gesperrt. Zum Start: 'Disallow: /' entfernen.
+# Erzeugt von tools/apply-config.py aus js/config.js (indexierung = false).
 User-agent: *
 Disallow: /
 

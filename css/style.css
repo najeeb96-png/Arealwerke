@@ -1070,3 +1070,77 @@ ul.social { list-style: none; padding: 0; margin: 1rem 0 0; display: flex; gap: 
 /* Mobilmenü: Pfeil-Icon klein, Untermenü linksbündig */
 .nav-chevron { width: 18px; height: 18px; flex-shrink: 0; }
 .nav-sub a { justify-content: flex-start; }
+
+
+/* ==========================================================================
+   Kontakt-Auswahl (Akkordeon), Hero-Schnellkontakt, Kompaktabschnitte
+   ========================================================================== */
+.hero-quick { width: 100%; max-width: 420px; background: var(--c-surface); border: 1px solid var(--c-line); border-radius: var(--radius); padding: 1rem 1.1rem; }
+.hero-quick-title { margin: 0 0 0.6rem; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-text-muted); }
+.hero-quick-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.hero-quick-btns .btn { flex: 1 1 auto; }
+
+.chooser { display: grid; gap: 1rem; }
+@media (min-width: 900px) { .chooser { grid-template-columns: repeat(3, 1fr); align-items: stretch; } }
+.choice { background: var(--c-surface); border: 1px solid var(--c-line); border-radius: calc(var(--radius) + 4px); overflow: hidden; transition: border-color 0.25s, box-shadow 0.25s; }
+.choice.is-open { border-color: var(--c-gold); box-shadow: 0 0 0 1px var(--c-gold), var(--shadow); }
+.choice-head {
+  display: flex; align-items: center; gap: 1rem; width: 100%; min-height: 96px;
+  padding: 1.2rem 1.3rem; background: transparent; border: 0; color: var(--c-text);
+  font: inherit; text-align: left; cursor: pointer;
+}
+.choice-head:hover { background: var(--c-surface-2); }
+.choice-head .icon-badge { margin: 0; flex-shrink: 0; }
+.choice.is-open .icon-badge { background: var(--c-gold); color: #14110a; }
+.choice-text { display: flex; flex-direction: column; gap: 0.15rem; flex: 1; }
+.choice-text strong { font-size: 1.08rem; }
+.choice-text span { color: var(--c-text-muted); font-size: 0.9rem; }
+.choice-chevron { width: 20px; height: 20px; flex-shrink: 0; color: var(--c-gold); transition: transform 0.3s var(--ease); }
+.choice.is-open .choice-chevron { transform: rotate(180deg); }
+.choice-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.4s var(--ease); }
+.choice-panel[hidden] { display: grid; }       /* Höhe wird animiert, hidden nur für Screenreader/No-JS beim Start */
+.choice.is-expanded .choice-panel { grid-template-rows: 1fr; }
+.choice-inner { overflow: hidden; }
+.choice-inner > * { margin: 0 1.3rem 1.3rem; }
+.choice-inner > .form { border: 0; border-radius: 0; padding: 0; background: transparent; }
+.choice-inner > .muted { margin-top: 0; }
+.choice-inner .btn-row { margin-bottom: 1rem; }
+.copy-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.8rem; padding: 0.9rem 1rem; border: 1px dashed var(--c-line-strong); border-radius: var(--radius-sm); }
+.copy-number { font-family: var(--font-head); font-size: 1.35rem; color: var(--c-heading); letter-spacing: 0.04em; }
+.contact-grid--below { grid-template-columns: 1fr; }
+.contact-grid--below .contact-info { display: grid; gap: 1rem; }
+@media (min-width: 800px) { .contact-grid--below .contact-info { grid-template-columns: repeat(2, 1fr); } .contact-grid--below .map-consent { grid-column: 1 / -1; } }
+.contact-line--static { cursor: default; }
+.consent--toggle { padding: 0.9rem 1rem; border: 1px dashed var(--c-line-strong); border-radius: var(--radius-sm); }
+.visit-box { padding: 0 0 0 0.5rem; border-left: 3px solid var(--c-gold); display: grid; gap: 1rem; }
+.visit-box[hidden] { display: none; }
+.usecases--plain li { background: transparent; border: 0; padding: 0.5rem 0; }
+.usecases--plain li svg { width: 22px; height: 22px; color: var(--accent); flex-shrink: 0; margin-top: 0.1em; }
+.condition .value--text { font-family: var(--font-body); font-size: 0.95rem; color: var(--c-text); }
+.hours td { color: var(--c-text); }
+@media (prefers-reduced-motion: reduce) { .choice-panel { transition: none; } }
+
+/* Formular im eingeklappten Panel nicht breiter als das Panel */
+.choice-inner > .form { width: auto; }
+
+/* Desktop: drei gleich große Karten in einer Reihe, geöffnetes Panel darunter in voller Breite */
+@media (min-width: 900px) {
+  .chooser { grid-template-columns: repeat(3, 1fr); grid-template-rows: auto auto; }
+  .chooser .choice { display: contents; }
+  .chooser .choice.is-open { grid-column: auto; }
+  .choice-head {
+    grid-row: 1; min-height: 110px;
+    background: var(--c-surface); border: 1px solid var(--c-line); border-radius: calc(var(--radius) + 4px);
+    transition: border-color 0.25s, box-shadow 0.25s, background 0.25s;
+  }
+  .choice[data-choice="direct"] .choice-head { grid-column: 1; }
+  .choice[data-choice="callback"] .choice-head { grid-column: 2; }
+  .choice[data-choice="details"] .choice-head { grid-column: 3; }
+  .choice.is-open .choice-head { border-color: var(--c-gold); box-shadow: 0 0 0 1px var(--c-gold), var(--shadow); background: var(--c-surface); }
+  .choice-panel { grid-column: 1 / -1; grid-row: 2; }
+  .choice.is-expanded .choice-panel .choice-inner {
+    background: var(--c-surface); border: 1px solid var(--c-gold); border-radius: calc(var(--radius) + 4px); padding-top: 1.5rem;
+  }
+  .choice-inner > * { margin-inline: 1.6rem; }
+  .chooser:not(:has(.is-expanded)) { grid-template-rows: auto; }
+}
